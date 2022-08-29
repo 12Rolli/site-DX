@@ -21,7 +21,7 @@
         .content__elts{
         padding-bottom: rem(52);
         gap: rem(96);
-        @include breakpoint-down(small){
+        @include breakpoint-down(xmedium){
             grid-template-columns: 1fr;
         }
         .content__card{
@@ -70,6 +70,9 @@
         .content__img{
             position: relative;
             @include breakpoint-down(small){
+                display: none;
+            }
+            @include breakpoint-down(xmedium){
                 display: none;
             }
             img{

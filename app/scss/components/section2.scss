@@ -36,9 +36,16 @@
             .content__text{
                     padding: rem(12) 0 rem(50) rem(15);
                     background-color: var(--white);
+                    @include breakpoint-down(xmedium){
+                        padding: 0.75rem 0 1.125rem;
+                    }
                 p{
                     font-weight: 600;
                     margin: 0;
+                    font-size: 1.025rem;
+                    @include breakpoint-down(xmedium){
+                        font-size: rem(16);
+                    }
                     @include breakpoint-down(xsmall){
                         font-size: rem(16);
                     }

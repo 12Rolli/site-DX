@@ -50,7 +50,10 @@ p {
     text-align: justify;
     font-size: rem(18);
     line-height: rem(22);
-    @include breakpoint-down(xxsmall){
+    @include breakpoint-down(xmedium){
+        font-size: rem(14);
+    }
+    @include breakpoint-down(xsmall){
         font-size: rem(10);
     }
 }

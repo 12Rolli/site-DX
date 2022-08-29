@@ -11,9 +11,7 @@
 
     .container{
         .content{
-            @include breakpoint-down(small){
-                grid-template-columns: repeat(1, 1fr);
-            }
+            gap: rem(16);
             .list{
                 position: relative;
                 justify-self: end;
@@ -33,6 +31,9 @@
                     }
                     .title{
                     cursor: pointer;
+                    @include breakpoint-down(xmedium){
+                        font-size: rem(16);
+                    }
                     }
                 }
                 .digitale{
@@ -52,7 +53,6 @@
             }
 
             .text-content{
-
                 .text{
                     display: none;
                     .title{
@@ -61,6 +61,11 @@
                         font-size: rem(50);
                         font-weight: bold;
                         color: var(--blue);
+                        @include breakpoint-down(xmedium){
+                            padding-top: rem(75);
+                            line-height: 2rem;
+                            font-size: rem(28);
+                        }
                     }
                     p{
                         text-align: justify;
@@ -99,6 +104,7 @@
 #visuel:checked ~ .list .visuel,
 #digitale:checked ~ .list .digitale{
   color: var(--blue);
+  white-space: nowrap;
   font-weight: 800;
     img{
         display: none;

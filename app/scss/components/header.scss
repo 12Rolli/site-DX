@@ -54,6 +54,9 @@
             }
          }
          &_img{
+            @include breakpoint-down(xmedium){
+                display: none !important;
+            }
             @include breakpoint-down(extrasmall){
                 display: none;
             }
@@ -84,6 +87,18 @@
                 display: none;
             }
             @include breakpoint-down(small){
+                display: block;
+            }
+        }
+        .tab{
+            display: none;
+            @include breakpoint-down(extrasmall){
+                display: none;
+            }
+            @include breakpoint-down(small){
+                display: none !important;
+            }
+            @include breakpoint-down(xmedium){
                 display: block;
             }
         }

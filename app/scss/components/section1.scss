@@ -2,6 +2,9 @@
 
 .section__1{
     padding-bottom: 3rem;
+    @include breakpoint-down(xmedium){
+        display: none;
+    }
     @include breakpoint-down(small){
         display: none;
     }

@@ -1,17 +1,17 @@
 @use '../util' as *;
-.footer{
-
+.footer {
     .footerfirstpart {
         background-color: var(--black);
         width: 100%;
-    
+
         &__container {
             gap: 2rem;
-            padding-top: 6rem;
             max-width: rem(1110);
             margin: 0 auto;
-            @include breakpoint-down(small){
-                grid-template-columns: 1fr;
+            padding: 6rem 3rem 1.5rem 3rem;
+            @include breakpoint-down(tablet) {
+                padding: 6rem 1.5rem 1.5rem 3.2rem;
+                gap: 2.5rem;
             }
         }
         &__title {
@@ -21,7 +21,7 @@
             line-height: rem(24);
             color: var(--white);
         }
-    
+
         &__title::after {
             position: relative;
             top: 1.5rem;
@@ -31,7 +31,7 @@
             height: 0.132rem;
             background: #cbcbcb;
         }
-    
+
         &__list {
             list-style: none;
             margin: 0;
@@ -40,7 +40,7 @@
             flex-direction: column;
             gap: 1.5rem;
         }
-    
+
         &__link {
             text-decoration: none;
             display: inline-block;
@@ -69,23 +69,23 @@
             margin-top: 0.5rem;
         }
     }
-    
+
     .footersecondpart {
         display: flex;
         gap: 4rem;
         justify-content: center;
         padding: 1rem 0;
-        @include breakpoint-down(xsmall){
+        @include breakpoint-down(xsmall) {
             gap: 2rem;
         }
-        @include breakpoint-down(xxsmall){
+        @include breakpoint-down(xxsmall) {
             gap: 1rem;
         }
     }
     .footercopyright {
         background-color: var(--black);
         padding: 0.8rem 0;
-    
+
         &__text {
             text-align: center;
             font-family: 'Inter';

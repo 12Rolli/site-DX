@@ -5,19 +5,27 @@
     filter: drop-shadow(0 0 0.75rem #183867);
 
     &__container {
-        clip-path: polygon(0 0, 100% 0, 100% 52vh, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 56vh, 0 100%);
         width: 100%;
         height: 60vh;
         background-color: var(--bluecontact);
         color: var(--white);
         display: grid;
         align-items: center;
+
+        @include breakpoint-down(mobile) {
+            clip-path: polygon(0 0, 100% 0, 100% 55vh, 0 100%);
+        }
     }
 
     &__content {
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
+
+        @include breakpoint-down(mobile) {
+            padding: 0 1rem;
+        }
     }
 
     &__title {
@@ -27,6 +35,10 @@
         text-align: center;
         text-transform: uppercase;
         margin: 0;
+
+        @include breakpoint-down(mobile) {
+            font-size: rem(38);
+        }
     }
     &__text {
         font-size: rem(28);
@@ -35,13 +47,21 @@
         text-align: center;
         margin: 0;
         text-transform: uppercase;
+
+        @include breakpoint-down(mobile) {
+            font-size: rem(18);
+        }
     }
     &__email {
         text-align: center;
         font-weight: 700;
-        font-size: 30px;
-        line-height: 36px;
+        font-size: rem(30);
+        line-height: rem(36);
         margin: 0;
+
+        @include breakpoint-down(mobile) {
+            font-size: rem(20);
+        }
     }
 }
 .formcontact {
@@ -68,7 +88,7 @@
         padding-bottom: 0.5rem;
     }
     &__subsubtitle {
-        font-weight: 100;
+        font-weight: 300;
         font-size: rem(15);
         line-height: rem(18);
         text-align: center;
@@ -125,6 +145,10 @@
     }
     &__message {
         grid-column: 1/3;
+
+        @include breakpoint-down(mobile) {
+            grid-column: initial;
+        }
     }
     &__inputselect {
         border: none;
@@ -168,6 +192,14 @@
         color: rgba(0, 0, 0, 0.54);
         width: 50%;
         background-color: var(--white);
+
+        @include breakpoint-down(tablet) {
+            width: 70%;
+            justify-content: space-around;
+        }
+        @include breakpoint-down(small) {
+            width: 85%;
+        }
     }
 
     &__inputcontact {
@@ -177,5 +209,15 @@
         border-radius: rem(10);
         border: none;
         padding: 0.5rem 3rem;
+
+        @include breakpoint-down(mobile) {
+            grid-column: initial;
+        }
+    }
+
+    .remove {
+        @include breakpoint-down(mobile) {
+            display: none;
+        }
     }
 }

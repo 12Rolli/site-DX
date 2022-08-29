@@ -2,24 +2,36 @@
 
 .section_accordion{
     display: none;
+    @include breakpoint-down(xmedium){
+        display: none;
+    }
     @include breakpoint-down(small){
         display: block;
     }
     .accordion {
-        background-color: #eee;
+        background-color: var(--white);
         color: var(--grayLight);
         cursor: pointer;
-        padding: 18px;
-        border-bottom: 1px solid var(--black);
+        padding: rem(18);
         width: 100%;
         border: none;
+        border-bottom: 1px solid var(--black);
         text-align: left;
         outline: none;
-        font-size: rem(23);
-        transition: 0.4s;
+        font-size: rem(14);
+        transition: 0.7s;
         &:hover {
-            color: var(--white);
-            background-color: var(--blue); 
+            color: var(--blue);
+            background-color: var(--white); 
+            font-weight: bold;
+            border-top: 1px solid var(--black);
+        }
+        &::after{
+            content: '';
+            border-left: 4px solid;
+            border-bottom: 4px solid;
+            width: rem(18);
+            height: rem(18);
         }
       }
       .panel {
@@ -33,6 +45,10 @@
             font-size: rem(30);
             font-weight: bold;
             color: var(--blue);
+            @include breakpoint-down(xmedium){
+            padding-top: rem(0);
+            font-size: rem(13);
+            }
         }
         p{
             text-align: justify;
@@ -40,7 +56,20 @@
         }
     }
       .active{
-            color: var(--white);
-            background-color: var(--blue); 
+        font-size: rem(15);
+            background-color: var(--white); 
+            font-weight: bold;
+            border-bottom: none;
     }
 }
+    .Mobile1{
+        @include breakpoint-down(xmedium){
+            display: block;    
+            padding: rem(39) 0;
+        }
+    }
+    .Mobile{
+        @include breakpoint-down(xmedium){
+            padding: rem(39) 0;
+        }
+    }

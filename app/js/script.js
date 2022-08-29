@@ -23,7 +23,7 @@ acc[i].addEventListener("click", function() {
 			function autoSlide() {
 			setInterval(() => {
 				slide(getItemActiveIndex() + 1);
-			}, 4000); // slide speed = 4s
+			}, 3000); // slide speed = 4s
 			}
 			function slide(toIndex) {
    const itemsArray = Array.from(document.querySelectorAll(".carousel_item"));
