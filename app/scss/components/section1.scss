@@ -1,0 +1,81 @@
+@use '../util' as *;
+
+.section__1{
+    padding-bottom: 3rem;
+    @include breakpoint-down(small){
+        display: none;
+    }
+    &__content{
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        @include breakpoint-down(small){
+            display: none;
+        }
+        .content__subtitle{
+            display: flex;
+            color: var(--blue);
+            justify-content: space-between;
+            word-spacing: 0.21rem;
+            cursor: pointer;
+            margin: 0 3rem;
+            .subtitle1, .subtitle2, .subtitle3{
+                font-weight: 800;
+            }
+        }
+        .content__bar{
+            display: flex;
+            justify-content: space-evenly;
+            background-color: var(--gray);
+            height: rem(2);
+            margin-top: -2.8rem;
+
+            .bar{
+                    background-color: var(--blue);
+                    width: 20%;
+                    height: rem(2);
+                &__1{
+                    margin-left: -80%;
+                }
+                &__2{
+                    justify-self: center;
+                    margin: 0 auto;
+                    display: none;
+                }
+                &__3{
+                    margin-right: -80%;
+                    display: none;
+                }
+            }
+        }
+        .content__text{
+            height: rem(210);
+            p{
+            margin: 0 1rem;
+            }
+            .text__2, .text__3{
+                display: none;
+            }
+        }
+    }
+}
+
+.content__title{
+    text-align: center;
+    text-transform: uppercase;
+    &--blue{
+        color: var(--blue);
+    }
+    &--white {
+        color: var(--white);
+    }
+    &--dark {
+        color: var(--black);
+    }
+    &--whiteclair {
+        color: var(--whiteLight);
+        text-align: left;
+    }
+}
+

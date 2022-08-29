@@ -1,0 +1,56 @@
+@use '../util' as *;
+
+h1,
+h2,
+h3 {
+    margin-top: 0;
+    line-height: 1.1;
+}
+
+a,
+a:visited,
+a:active {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: rem(40);
+    line-height: rem(48);
+    @include breakpoint-down(small){
+        font-size: rem(32);
+    }
+    @include breakpoint-down(xxsmall){
+        font-size: rem(20);
+    }
+}
+h2 {
+    font-weight: 300;
+    font-size: rem(36);
+    line-height: rem(43.2);
+    @include breakpoint-down(small){
+        font-size: rem(13);
+    }
+}
+h3 {
+    font-weight: 800;
+    font-size: rem(15);
+    line-height: rem(18);
+    @include breakpoint-down(small){
+        font-size: rem(12);
+    }
+}
+
+p {
+    font-weight: 300;
+    text-align: justify;
+    font-size: rem(18);
+    line-height: rem(22);
+    @include breakpoint-down(xxsmall){
+        font-size: rem(10);
+    }
+}

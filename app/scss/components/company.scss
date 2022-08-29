@@ -1,0 +1,73 @@
+@use '../util' as *;
+
+.company__bloc_3{
+    display: none;
+    text-align: center;
+    background: #212121;
+    color: var(--white);
+    @include breakpoint-down(small){
+        display: block;
+    }
+    &_text{
+        padding: rem(60) 0;
+        display: grid;
+        @include breakpoint-down(medium){
+            padding-bottom: 0;
+        }
+        @include breakpoint-down(small){
+            padding: 1.75rem 0;
+        }
+        p{
+            margin-bottom: rem(35);
+            @include breakpoint-down(extramedium){
+                margin-bottom: rem(25);
+            } 
+            @include breakpoint-down(extrasmall){
+                margin-bottom: rem(10);
+            }
+            .our_button{
+                text-transform: uppercase;
+                border: 1px solid #fff !important;
+                border-radius: rem(5);
+                display: inline-block;
+                padding: rem(15) rem(20);
+                color: #fff;
+                letter-spacing: 0.08em;
+                line-height: normal;
+                background: transparent;
+                font-size: rem(10);
+                @include breakpoint-down(extramedium){
+                    padding: rem(8) rem(10);
+                    font-size: 0.6rem;
+                } 
+            }
+        }
+        .big{
+            padding: 0 1rem;
+            font-size: rem(16);
+        }
+        .btn_button{justify-self: center;}
+    }
+    &_img{
+        @include breakpoint-down(large){
+            margin: 0 5rem;
+        }
+        @include breakpoint-down(medium){
+            margin: 0 3rem;
+        }
+        @include breakpoint-down(small){
+            margin: 0 1rem;
+        }
+        .list{
+                display: inline-flex;
+                justify-content: space-between;
+                list-style: none;
+                padding: 0;
+            li{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

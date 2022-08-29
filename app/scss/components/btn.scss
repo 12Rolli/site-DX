@@ -1,0 +1,50 @@
+@use '../util' as *;
+
+.btn_flex{
+    display: flex;
+    @include breakpoint-down(xxsmall){
+        margin-top: -1rem;
+    }
+}
+
+.btn{
+    border: 0.185rem solid var(--blue);
+    padding: 0.4rem 2rem;
+    border-radius: 0.3rem;
+    background-color: var(--blue);
+    color: var(--white);
+    @include breakpoint-down(small){
+        font-size: 0.8rem;
+    }
+    &--blue{
+        border-radius: rem(35) rem(5) 0 0;
+        @include breakpoint-down(xxsmall){
+            padding: rem(8);
+            margin-right: 0.8rem;
+        }
+    }
+    &_circle{
+        border-radius: 50%;
+        width: rem(48);
+        height: rem(48);
+        margin-left: rem(-23);
+        background-color: var(--white);
+        @include breakpoint-down(small){
+            width: rem(38);
+            height: rem(38);
+        }
+        img{
+            height: 3rem;
+            padding: 0.5rem;
+            @include breakpoint-down(small){
+                height: rem(38);
+            }
+        }
+    }
+    &--center{
+        justify-self: center;
+        @include breakpoint-down(small){
+            display: none;
+        }
+    }
+}

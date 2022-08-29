@@ -1,0 +1,100 @@
+@use '../util' as *;
+.footer{
+
+    .footerfirstpart {
+        background-color: var(--black);
+        width: 100%;
+    
+        &__container {
+            gap: 2rem;
+            padding-top: 6rem;
+            max-width: rem(1110);
+            margin: 0 auto;
+            @include breakpoint-down(small){
+                grid-template-columns: 1fr;
+            }
+        }
+        &__title {
+            font-family: 'Inter';
+            font-weight: 700;
+            font-size: rem(20);
+            line-height: rem(24);
+            color: var(--white);
+        }
+    
+        &__title::after {
+            position: relative;
+            top: 1.5rem;
+            content: '';
+            display: block;
+            width: 5rem;
+            height: 0.132rem;
+            background: #cbcbcb;
+        }
+    
+        &__list {
+            list-style: none;
+            margin: 0;
+            padding: 3rem 0 2rem 0;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+    
+        &__link {
+            text-decoration: none;
+            display: inline-block;
+            font-family: 'Inter';
+            font-weight: 400;
+            font-size: rem(16);
+            line-height: rem(19);
+            color: var(--white);
+            // margin-bottom: 1.5rem;
+            // border-bottom: rem(1) solid #eaeaea;
+            // padding-bottom: 0.7rem;
+        }
+        // &__link::after {
+        //     position: relative;
+        //     top: 0.5rem;
+        //     content: '';
+        //     display: block;
+        //     width: 100%;
+        //     height: 0.132rem;
+        //     background: #cbcbcb;
+        // }
+        .bar {
+            width: 90%;
+            height: rem(1);
+            background-color: #eaeaea;
+            margin-top: 0.5rem;
+        }
+    }
+    
+    .footersecondpart {
+        display: flex;
+        gap: 4rem;
+        justify-content: center;
+        padding: 1rem 0;
+        @include breakpoint-down(xsmall){
+            gap: 2rem;
+        }
+        @include breakpoint-down(xxsmall){
+            gap: 1rem;
+        }
+    }
+    .footercopyright {
+        background-color: var(--black);
+        padding: 0.8rem 0;
+    
+        &__text {
+            text-align: center;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: rem(15);
+            line-height: rem(19);
+            color: var(--white);
+            margin: 0;
+        }
+    }
+}

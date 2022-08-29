@@ -1,0 +1,181 @@
+@use '../util' as *;
+
+.bannercontact {
+    //box-shadow: 0px 5px 12px 0px #183867;
+    filter: drop-shadow(0 0 0.75rem #183867);
+
+    &__container {
+        clip-path: polygon(0 0, 100% 0, 100% 52vh, 0 100%);
+        width: 100%;
+        height: 60vh;
+        background-color: var(--bluecontact);
+        color: var(--white);
+        display: grid;
+        align-items: center;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    &__title {
+        font-weight: 100;
+        font-size: rem(48);
+        line-height: rem(58);
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0;
+    }
+    &__text {
+        font-size: rem(28);
+        font-weight: 100;
+        line-height: rem(34);
+        text-align: center;
+        margin: 0;
+        text-transform: uppercase;
+    }
+    &__email {
+        text-align: center;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 36px;
+        margin: 0;
+    }
+}
+.formcontact {
+    padding-bottom: 3rem;
+    background-color: #d9d9d9;
+    max-width: rem(900);
+    margin: 4rem auto 4rem auto;
+    padding: 4rem 1rem 3rem 1rem;
+
+    &__title {
+        font-weight: 300;
+        font-size: rem(16);
+        line-height: rem(19);
+        text-align: center;
+        margin: 0;
+        padding-bottom: 0.5rem;
+    }
+    &__subtitle {
+        font-weight: 600;
+        font-size: rem(20);
+        line-height: rem(24);
+        text-align: center;
+        margin: 0;
+        padding-bottom: 0.5rem;
+    }
+    &__subsubtitle {
+        font-weight: 100;
+        font-size: rem(15);
+        line-height: rem(18);
+        text-align: center;
+        margin: 0;
+        padding-bottom: 0.5rem;
+    }
+    &__form {
+        padding-top: 1rem;
+        gap: 1.5rem;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+    }
+    &__label {
+        font-weight: 500;
+        font-size: rem(13);
+        line-height: rem(16);
+        padding: 0 0 0.4rem 0.7rem;
+        color: rgba(0, 0, 0, 0.54);
+
+        span {
+            color: #da1b1b;
+            font-weight: 400;
+            font-size: rem(12);
+            line-height: rem(13);
+        }
+    }
+    &__input {
+        border: none;
+        outline: none;
+        padding: 0.8rem 1rem;
+        border-radius: rem(3);
+        font-weight: 100;
+        color: #b4b4b4;
+        font-size: rem(12);
+    }
+    &__tel {
+        background-color: var(--white);
+        display: flex;
+        border-radius: rem(3);
+        padding-left: 1rem;
+
+        img {
+            width: 1.5rem;
+            height: 1.5rem;
+            align-self: center;
+            border-right: rem(1) solid #979797;
+        }
+
+        input {
+            padding-left: 0.5rem;
+        }
+    }
+    &__message {
+        grid-column: 1/3;
+    }
+    &__inputselect {
+        border: none;
+        outline: none;
+        padding: 0.8rem 1rem;
+        border-radius: rem(3);
+        font-weight: 100;
+        color: var(--black);
+        font-size: rem(12);
+    }
+    &__policies {
+        p {
+            font-weight: 300;
+            font-size: rem(13);
+            line-height: rem(16);
+            padding-left: 2rem;
+        }
+    }
+    &__policiescontent {
+        display: flex;
+        padding-left: 1rem;
+        input {
+            align-self: flex-start;
+        }
+        span {
+            font-weight: 500;
+            font-size: rem(13);
+            line-height: rem(16);
+        }
+        .text--blue {
+            color: #2d9ced;
+        }
+    }
+    &__contentcaptcha {
+        display: flex;
+        align-items: center;
+        border: rem(1) solid rgba(0, 0, 0, 0.39);
+        font-weight: 500;
+        font-size: rem(13);
+        line-height: rem(16);
+        color: rgba(0, 0, 0, 0.54);
+        width: 50%;
+        background-color: var(--white);
+    }
+
+    &__inputcontact {
+        justify-self: center;
+        grid-column: 1/3;
+        background-color: #2d9ced;
+        border-radius: rem(10);
+        border: none;
+        padding: 0.5rem 3rem;
+    }
+}

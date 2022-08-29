@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <title>Site DigitalX</title>
+        <link rel="stylesheet" href="../dist/style.css" />
+        <script defer src="../dist/script.js"></script>
+    </head>
+    <body>
+        <main>
+            <section class="bannercontact">
+                <div class="bannercontact__container">
+                    <div class="bannercontact__content">
+                        <h1 class="bannercontact__title">
+                            <strong>parlez - </strong> nous de vos
+                            <strong>projets</strong>
+                        </h1>
+                        <p class="bannercontact__text">
+                            nous vous répondrons dans 48h
+                        </p>
+                        <p class="bannercontact__email">
+                            <img
+                                src="../images/contact/message.png"
+                                alt="icône d'une enveloppe"
+                            />
+                            <span>info@digital-x-sarl.com</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="formcontact">
+                <p class="formcontact__title">
+                    Nous aimons les questions et les commentaires et nous sommes
+                    toujours heureux de vous aider.
+                </p>
+                <p class="formcontact__subtitle">Envoyez nous un message</p>
+                <p class="formcontact__subsubtitle">
+                    Envoyez nous un message et nous répondrons en 24 heures
+                </p>
+                <form class="formcontact__form grid-2-col">
+                    <div class="formcontact__content">
+                        <label for="nom" class="formcontact__label"
+                            >Nom complet
+                            <span>*</span>
+                        </label>
+                        <input
+                            type="text"
+                            name="nom"
+                            placeholder="Entrez votre nom complet"
+                            required
+                            class="formcontact__input"
+                        />
+                    </div>
+
+                    <div class="formcontact__content">
+                        <label for="email" class="formcontact__label"
+                            >Email
+                            <span>*</span>
+                        </label>
+                        <input
+                            type="email"
+                            name="email"
+                            placeholder="Entrez votre adresse mail"
+                            required
+                            class="formcontact__input"
+                        />
+                    </div>
+
+                    <div class="formcontact__content">
+                        <label for="telephone" class="formcontact__label"
+                            >Téléphone
+                            <span>*</span>
+                        </label>
+                        <div class="formcontact__tel">
+                            <img
+                                src="../images/contact/drapeau.png"
+                                alt="icône d'un drapeau"
+                            />
+                            <input
+                                type="tel"
+                                name="telephone"
+                                placeholder="Numéro de téléphone"
+                                class="formcontact__input"
+                            />
+                        </div>
+                    </div>
+
+                    <div class="formcontact__content">
+                        <label for="organisation" class="formcontact__label"
+                            >Organisation
+                            <span>*</span>
+                        </label>
+                        <input
+                            type="text"
+                            name="organisation"
+                            placeholder="Nom de l'organisation"
+                            required
+                            class="formcontact__input"
+                        />
+                    </div>
+
+                    <div class="formcontact__content formcontact__message">
+                        <label for="message" class="formcontact__label"
+                            >Message
+                            <span>*</span>
+                        </label>
+                        <textarea
+                            name="message"
+                            id=""
+                            cols="30"
+                            rows="10"
+                            class="formcontact__input"
+                        ></textarea>
+                    </div>
+
+                    <div class="formcontact__content">
+                        <label for="projet" class="formcontact__label"
+                            >Type de projet
+                            <span>*</span>
+                        </label>
+                        <select
+                            name="projet"
+                            id=""
+                            class="formcontact__inputselect"
+                        >
+                            <option value="Web">Web</option>
+                            <option value="Developpement">Développement</option>
+                            <option value="design graphique">
+                                Design Graphique
+                            </option>
+                            <option value="shooting">Shooting</option>
+                            <option value="tous les services">
+                                Tous les services
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="formcontact__content">
+                        <label for="projet" class="formcontact__label"
+                            >Comment avez-vous entendu parler de nous?
+                        </label>
+                        <select
+                            name="projet"
+                            id=""
+                            class="formcontact__inputselect"
+                        >
+                            <option value="amis/ collegue">
+                                Amis/Collèues
+                            </option>
+                            <option value="recherche sur le net">
+                                Recherche sur le net
+                            </option>
+                            <option value="reseaux sociaux">
+                                Réseaux sociaux
+                            </option>
+                            <option value="document">Document</option>
+                            <option value="autre">Autres</option>
+                        </select>
+                    </div>
+
+                    <div class="formcontact__content formcontact__policies">
+                        <label for="politique" class="formcontact__label"
+                            >Politique de confidentialité
+                        </label>
+                        <div class="formcontact__policiescontent">
+                            <input
+                                type="checkbox"
+                                name="politique"
+                                required
+                                class="formcontact__input"
+                            />
+                            <span>
+                                Afin de nous soumettre vos coordonnées, veuillez
+                                accepter <br />
+                                les termes de notre
+                                <span class="text--blue"
+                                    >politique de confidentialité</span
+                                >
+                            </span>
+                        </div>
+                        <p>
+                            Celle-ci fournit toutes les informations relatives à
+                            la protection des données et à Blue Frontier, et
+                            peut être mise à jour de temps à autre. Veuillez
+                            donc la consulter régulièrement pour prendre
+                            connaissance des mises à jour.
+                        </p>
+                    </div>
+
+                    <div class="formcontact__content">
+                        <label for="captcha" class="formcontact__label"
+                            >Veuillez cocher la case
+                        </label>
+                        <div class="formcontact__contentcaptcha">
+                            <input
+                                type="checkbox"
+                                name="captcha"
+                                required
+                                class="formcontact__input"
+                            />
+                            <span>Veuillez cocher la case</span>
+                            <img
+                                src="../images/contact/capcha.png"
+                                alt="icône captcha"
+                            />
+                        </div>
+                    </div>
+
+                    <input
+                        type="submit"
+                        value="Envoyer"
+                        class="formcontact__inputcontact"
+                    />
+                </form>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footerfirstpart">
+                <div class="grid-4-cols footerfirstpart__container">
+                    <div class="footerfirstpart__content">
+                        <h2 class="footerfirstpart__title">Design Graphique</h2>
+                        <ul class="footerfirstpart__list">
+                            <li>
+                                <a href="#" class="footerfirstpart__link"
+                                    >UI et UX Design
+                                </a>
+                                <div class="bar"></div>
+                            </li>
+                            <li>
+                                <a href="#" class="footerfirstpart__link"
+                                    >Graphic Design
+                                </a>
+                                <div class="bar"></div>
+                            </li>
+                            <li>
+                                <a href="#" class="footerfirstpart__link"
+                                    >Video Production
+                                </a>
+                                <div class="bar"></div>
+                            </li>
+                            <li>
+                                <a href="#" class="footerfirstpart__link"
+                                    >Web Design
+                                </a>
+                                <div class="bar"></div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footerfirstpart__content">
+                        <h2 class="footerfirstpart__title">Développement</h2>
+                        <ul class="footerfirstpart__list">
+                            <li>
+                                <a href="#" class="footerfirstpart__link"
+                                    >Développement web
+                                </a>
+                                <div class="bar"></div>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footerfirstpart__link"
+                                    >Développement mobile
+                                </a>
+                                <div class="bar"></div>
+                            </li>
+                            <li>
+                                <a href="#" class="footerfirstpart__link"
+                                    >Ecommerce
+                                </a>
+                                <div class="bar"></div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footerfirstpart__content">
+                        <h2 class="footerfirstpart__title">Marketing</h2>
+                        <ul class="footerfirstpart__list">
+                            <li>
+                                <a href="#" class="footerfirstpart__link"
+                                    >Marketing de contenu
+                                </a>
+                                <div class="bar"></div>
+                            </li>
+                            <li>
+                                <a href="#" class="footerfirstpart__link"
+                                    >Marketing de réseaux sociaux
+                                </a>
+                                <div class="bar"></div>
+                            </li>
+                            <li>
+                                <a href="#" class="footerfirstpart__link"
+                                    >Marketing d'email
+                                </a>
+                                <div class="bar"></div>
+                            </li>
+                            <li>
+                                <a href="#" class="footerfirstpart__link"
+                                    >Marketing audiovisuel
+                                </a>
+                                <div class="bar"></div>
+                            </li>
+                            <li>
+                                <a href="#" class="footerfirstpart__link"
+                                    >Marketing d'influence
+                                </a>
+                                <div class="bar"></div>
+                            </li>
+                            <li>
+                                <a href="#" class="footerfirstpart__link"
+                                    >Marketing d'affiliation
+                                </a>
+                                <div class="bar"></div>
+                            </li>
+                            <li>
+                                <a href="#" class="footerfirstpart__link"
+                                    >Référencement
+                                </a>
+                                <div class="bar"></div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footerfirstpart__content">
+                        <h2 class="footerfirstpart__title">Audiovisuel</h2>
+                        <ul class="footerfirstpart__list">
+                            <li>
+                                <a href="#" class="footerfirstpart__link"
+                                    >Photographie
+                                </a>
+                                <div class="bar"></div>
+                            </li>
+                            <li>
+                                <a href="#" class="footerfirstpart__link"
+                                    >Couverture médiatique
+                                </a>
+                                <div class="bar"></div>
+                            </li>
+                            <li>
+                                <a href="#" class="footerfirstpart__link"
+                                    >Shooting
+                                </a>
+                                <div class="bar"></div>
+                            </li>
+                            <li>
+                                <a href="#" class="footerfirstpart__link"
+                                    >Production audiovisuelle
+                                </a>
+                                <div class="bar"></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footersecondpart">
+                <a href="#">
+                    <img src="../images/footer/Vector.png" alt="" />
+                </a>
+                <a href="#">
+                    <img src="../images/footer/telegram.png" alt="" />
+                </a>
+                <a href="#">
+                    <img src="../images/footer/instagram.png" alt="" />
+                </a>
+            </div>
+            <div class="footercopyright">
+                <p class="footercopyright__text">
+                    Copyright : 2022 DIGITAL X SARL
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>

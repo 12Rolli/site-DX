@@ -1,0 +1,312 @@
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+<title>Site DigitalX</title>
+<link rel="stylesheet" href="../dist/style.css" />
+<script defer src="../dist/script.js"></script>
+
+<header class="header">
+    <img src="../images/Sites/menu/logo.png" alt="logo de DIGITAL X" class="header__logo"/>
+    <div class="header__overlay"></div>
+    <nav class="header__navigation">
+        <div class="header__menuhead">
+            <div class="header__retourarriere">
+                <ion-icon name="chevron-back-outline"></ion-icon>
+            </div>
+            <div class="header__currentmenu"></div>
+            <div class="header__close">&times;</div>
+        </div>
+        <ul class="header__list">
+            <li>
+                <a href="#" class="header__link">Home </a>
+            </li>
+            <li class="header__dropdown header__items">
+                <a href="#" class="header__link">
+                    <span class="link__title"> Services</span>
+                    <ion-icon
+                        name="chevron-down-outline"
+                        class="header__icon"
+                    ></ion-icon>
+                </a>
+                <div class="header__megamenu submenu">
+                    <div
+                        class="megamenu__firstelt"
+                        id="megamenu__first"
+                    ></div>
+                    <div class="megamenu__container">
+                        <div
+                            class="megamenu__content megamenu__secondelt"
+                            onmouseover="changeimg('url(images/img_menu/marketing.png)')"
+                            onmouseout="closeimg() "
+                        >
+                            <h1>Marketing</h1>
+                            <ul class="header__megamenulist">
+                                <li>
+                                    <a
+                                        href="serv marketing/marketing.html"
+                                    >
+                                        <ion-icon
+                                            name="chevron-forward-outline"
+                                            class="sublist__icon"
+                                        ></ion-icon
+                                        >Marketing de contenu
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="serv marketing/marketing.html"
+                                        ><ion-icon
+                                            name="chevron-forward-outline"
+                                            class="sublist__icon"
+                                        ></ion-icon
+                                        >Marketing de réseaux sociaux
+                                        (CM)</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="serv marketing/marketing.html"
+                                        ><ion-icon
+                                            name="chevron-forward-outline"
+                                            class="sublist__icon"
+                                        ></ion-icon
+                                        >Marketing d'email</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="serv marketing/marketing.html"
+                                        ><ion-icon
+                                            name="chevron-forward-outline"
+                                            class="sublist__icon"
+                                        ></ion-icon
+                                        >Marketing audiovisuel</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="serv marketing/marketing.html"
+                                        ><ion-icon
+                                            name="chevron-forward-outline"
+                                            class="sublist__icon"
+                                        ></ion-icon
+                                        >Marketing d'influence</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="serv marketing/marketing.html"
+                                        ><ion-icon
+                                            name="chevron-forward-outline"
+                                            class="sublist__icon"
+                                        ></ion-icon
+                                        >Marketing d'affiliation</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="serv marketing/marketing.html"
+                                        ><ion-icon
+                                            name="chevron-forward-outline"
+                                            class="sublist__icon"
+                                        ></ion-icon
+                                        >Référencement</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                        <div
+                            class="megamenu__content"
+                            onmouseover="changeimg('url(images/img_menu/audiovisuel.png)')"
+                            onmouseout="closeimg() "
+                        >
+                            <h1>Audiovisuel</h1>
+                            <ul class="header__megamenulist">
+                                <li>
+                                    <a href="serv audio/audio.html">
+                                        <ion-icon
+                                            name="chevron-forward-outline"
+                                            class="sublist__icon"
+                                        ></ion-icon
+                                        >Photographie
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="serv audio/audio.html"
+                                        ><ion-icon
+                                            name="chevron-forward-outline"
+                                            class="sublist__icon"
+                                        ></ion-icon
+                                        >Couverture médiatique</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="serv audio/audio.html"
+                                        ><ion-icon
+                                            name="chevron-forward-outline"
+                                            class="sublist__icon"
+                                        ></ion-icon
+                                        >Shooting</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="serv audio/audio.html"
+                                        ><ion-icon
+                                            name="chevron-forward-outline"
+                                            class="sublist__icon"
+                                        ></ion-icon
+                                        >Production audiovisuelle</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                        <div
+                            class="megamenu__content megamenu__fourthelt"
+                            onmouseover="changeimg('url(images/img_menu/dev.png)')"
+                            onmouseout="closeimg() "
+                        >
+                            <h1>Développement</h1>
+                            <ul class="header__megamenulist">
+                                <li>
+                                    <a
+                                        href="serv developpement/dev.html"
+                                    >
+                                        <ion-icon
+                                            name="chevron-forward-outline"
+                                            class="sublist__icon"
+                                        ></ion-icon
+                                        >Développement web
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="serv developpement/dev.html"
+                                        ><ion-icon
+                                            name="chevron-forward-outline"
+                                            class="sublist__icon"
+                                        ></ion-icon
+                                        >Développement mobile</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                        <div
+                            class="megamenu__content megamenu__fifthelt"
+                            onmouseover="changeimg('url(images/img_menu/design.png)')"
+                            onmouseout="closeimg() "
+                        >
+                            <h1>Design Graphique</h1>
+                            <ul class="header__megamenulist">
+                                <li>
+                                    <a
+                                        href="serv graphisme/graphisme.html"
+                                    >
+                                        <ion-icon
+                                            name="chevron-forward-outline"
+                                            class="sublist__icon"
+                                        ></ion-icon
+                                        >UI et UX Design
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="serv graphisme/graphisme.html"
+                                        ><ion-icon
+                                            name="chevron-forward-outline"
+                                            class="sublist__icon"
+                                        ></ion-icon
+                                        >Web design</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="header__dropdown header__items">
+                <a href="#" class="header__link">
+                    <span class="link__title"> Portfolio</span>
+                    <ion-icon
+                        name="chevron-down-outline"
+                        class="header__icon"
+                    ></ion-icon
+                ></a>
+
+                <ul class="header__droplist submenu">
+                    <li>
+                        <a href="portfolio/portfolio.html">
+                            <ion-icon
+                                name="chevron-forward-outline"
+                                class="sublist__icon"
+                            ></ion-icon>
+                            Réalisations</a
+                        >
+                    </li>
+                    <li>
+                        <a href="portfolio/portfolio.html"
+                            ><ion-icon
+                                name="chevron-forward-outline"
+                                class="sublist__icon"
+                            ></ion-icon
+                            >Template</a
+                        >
+                    </li>
+                    <li>
+                        <a href="portfolio/portfolio.html"
+                            ><ion-icon
+                                name="chevron-forward-outline"
+                                class="sublist__icon"
+                            ></ion-icon
+                            >Evènements</a
+                        >
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="header__link">Blog</a>
+            </li>
+            <li class="header__dropdown header__items">
+                <a href="#" class="header__link">
+                    <span class="link__title">Carrière</span>
+                    <ion-icon
+                        name="chevron-down-outline"
+                        class="header__icon"
+                    ></ion-icon>
+                </a>
+                <ul class="submenu header__droplist">
+                    <li>
+                        <a href="#">
+                            <ion-icon
+                                name="chevron-forward-outline"
+                                class="sublist__icon"
+                            ></ion-icon
+                            >Offres d'emplois</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#"
+                            ><ion-icon
+                                name="chevron-forward-outline"
+                                class="sublist__icon"
+                            ></ion-icon
+                            >Candidature spontanée</a
+                        >
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="header__link">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="header__menutrigger">
+        <span
+            ><ion-icon
+                name="menu-outline"
+                class="burger__icon"
+            ></ion-icon
+        ></span>
+    </div>
+</header>

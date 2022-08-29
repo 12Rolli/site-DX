@@ -1,0 +1,46 @@
+@use '../util' as *;
+
+.section_accordion{
+    display: none;
+    @include breakpoint-down(small){
+        display: block;
+    }
+    .accordion {
+        background-color: #eee;
+        color: var(--grayLight);
+        cursor: pointer;
+        padding: 18px;
+        border-bottom: 1px solid var(--black);
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: rem(23);
+        transition: 0.4s;
+        &:hover {
+            color: var(--white);
+            background-color: var(--blue); 
+        }
+      }
+      .panel {
+        padding: 0 rem(18);
+        display: none;
+        background-color: var(--white);
+        overflow: hidden;
+        .title{
+            padding-top: rem(30);
+            line-height: rem(25);
+            font-size: rem(30);
+            font-weight: bold;
+            color: var(--blue);
+        }
+        p{
+            text-align: justify;
+            line-height: rem(30);
+        }
+    }
+      .active{
+            color: var(--white);
+            background-color: var(--blue); 
+    }
+}

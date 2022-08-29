@@ -1,0 +1,52 @@
+@use '../util' as *;
+
+.section__2{
+
+    background-image: url(../images/Sites/Service/bg.png);
+    padding-bottom: rem(120);
+    
+    .content__title{
+        padding: rem(117) 0 rem(40) 0;
+        @include breakpoint-down(small){
+            padding: 1.3125rem 0 2.5rem;
+        }
+    }
+    .content__elts{
+            @include breakpoint-down(small){
+                grid-template-columns: repeat(1, 1fr);
+            }
+            .none{
+                @include breakpoint-down(small){
+                    display: none;
+                }
+            }
+        &_1{
+                display: grid;
+            .content__img{
+                overflow: hidden;
+                display: grid;
+                width: 100%;
+                img{
+                    width: 100%;
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                }
+            }
+            .content__text{
+                    padding: rem(12) 0 rem(50) rem(15);
+                    background-color: var(--white);
+                p{
+                    font-weight: 600;
+                    margin: 0;
+                    @include breakpoint-down(xsmall){
+                        font-size: rem(16);
+                    }
+                    @include breakpoint-down(xxsmall){
+                        font-size: 0.7rem;
+                    }
+                }
+            }
+        }
+    }
+}

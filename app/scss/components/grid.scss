@@ -1,0 +1,36 @@
+@use '../util' as *;
+
+.grid__1_cols {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+.grid__2_cols{
+    display: grid;
+    grid-template-columns: 1fr 0.807fr;
+    
+}
+.grid__2_col{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.grid--3-col{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+}
+.grid__4_cols{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: rem(10);
+    row-gap: rem(21);
+}
+
+.grid-4-cols {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.grid-2-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
