@@ -26,13 +26,6 @@
             font-weight: bold;
             border-top: 1px solid var(--black);
         }
-        &::after{
-            content: '';
-            border-left: 4px solid;
-            border-bottom: 4px solid;
-            width: rem(18);
-            height: rem(18);
-        }
       }
       .panel {
         padding: 0 rem(18);
