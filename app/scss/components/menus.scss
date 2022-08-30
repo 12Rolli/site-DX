@@ -1,0 +1,73 @@
+@use '../util' as *;
+
+.header {
+    width: 100%;
+    background-color: var(--black);
+    position: fixed;
+    top: 0;
+    z-index: 500;
+    padding: 0 10rem;
+
+    @include breakpoint-down(medium) {
+        padding: 0 4rem;
+    }
+
+    @include breakpoint-down(tablet) {
+        padding: 0 0 0 4rem;
+    }
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        max-width: rem(1500);
+        margin: 0 auto;
+    }
+    &__logo {
+        width: 3.5rem;
+        height: 3.5rem;
+        align-self: center;
+        padding: 0.3rem 0;
+
+        @include breakpoint-down(tablet) {
+            align-self: flex-end;
+        }
+    }
+    &__nav {
+        display: flex;
+        gap: 6rem;
+
+        @include breakpoint-down(tablet) {
+            gap: 0;
+            flex-direction: column-reverse;
+        }
+    }
+    &__list {
+        list-style: none;
+        display: flex;
+        gap: 2.5rem;
+        align-self: center;
+    }
+    &__link {
+        font-weight: 400;
+        font-size: rem(14);
+        line-height: rem(17);
+        color: var(--white);
+        display: inline-block;
+    }
+    &__link:hover {
+        color: var(--colorBlue);
+    }
+    &__contact {
+        color: var(--white);
+        align-self: center;
+        margin: 0;
+        font-weight: 600;
+        font-size: rem(14);
+        line-height: rem(17);
+
+        @include breakpoint-down(tablet) {
+            background-color: rebeccapurple;
+            padding: 1rem 2.5rem;
+            align-self: end;
+        }
+    }
+}
