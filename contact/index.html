@@ -18,27 +18,246 @@
         <script defer src="../dist/script.js"></script>
     </head>
     <body>
-        <header class="header">
+        <header class="header" id="header">
             <div class="header__container">
                 <img
                     src="../images/menu/Logo.png"
                     alt="logo de DX"
                     class="header__logo"
                 />
+
+                <div class="header__retourarriere">
+                    <img src="../images/menu/back.png" alt="" />
+                </div>
+
                 <nav class="header__nav">
                     <ul class="header__list">
-                        <li><a href="#" class="header__link">Home</a></li>
-                        <li>
-                            <a href="#" class="header__link">Nos services</a>
-
-                            <div class="megamenu"></div>
+                        <div class="header__currentmenu"></div>
+                        <li class="header__item">
+                            <a href="#" class="header__link">
+                                <span class="header__linktitle">Home</span>
+                            </a>
                         </li>
-                        <li><a href="#" class="header__link">Portfolio</a></li>
-                        <li><a href="#" class="header__link">Carriere</a></li>
-                        <li><a href="#" class="header__link">Contact</a></li>
+
+                        <li class="link--service header__item header__child">
+                            <a href="#" class="header__link">
+                                <span class="header__linktitle"
+                                    >Nos services</span
+                                >
+                            </a>
+
+                            <div class="header__megamenu submenu">
+                                <div class="header__megamenucontainer">
+                                    <div class="header__megamenucontent">
+                                        <h2 class="header__megamenutitle">
+                                            Design Graphique
+                                        </h2>
+                                        <ul class="header__megamenulist">
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    class="header__megamenulink"
+                                                    >UI et UX Design
+                                                </a>
+                                                <div class="bar"></div>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    class="header__megamenulink"
+                                                    >Graphic Design
+                                                </a>
+                                                <div class="bar"></div>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    class="header__megamenulink"
+                                                    >Video Production
+                                                </a>
+                                                <div class="bar"></div>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    class="header__megamenulink"
+                                                    >Web Design
+                                                </a>
+                                                <div class="bar"></div>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="header__megamenucontent">
+                                        <h2 class="header__megamenutitle">
+                                            Développement
+                                        </h2>
+                                        <ul class="header__megamenulist">
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    class="header__megamenulink"
+                                                    >Développement web
+                                                </a>
+                                                <div class="bar"></div>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    class="header__megamenulink"
+                                                    >Développement mobile
+                                                </a>
+                                                <div class="bar"></div>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    class="header__megamenulink"
+                                                    >Ecommerce
+                                                </a>
+                                                <div class="bar"></div>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="header__megamenucontent">
+                                        <h2 class="header__megamenutitle">
+                                            Marketing
+                                        </h2>
+                                        <ul class="header__megamenulist">
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    class="header__megamenulink"
+                                                    >Marketing de contenu
+                                                </a>
+                                                <div class="bar"></div>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    class="header__megamenulink"
+                                                    >Marketing de réseaux
+                                                    sociaux
+                                                </a>
+                                                <div class="bar"></div>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    class="header__megamenulink"
+                                                    >Marketing d'email
+                                                </a>
+                                                <div class="bar"></div>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    class="header__megamenulink"
+                                                    >Marketing audiovisuel
+                                                </a>
+                                                <div class="bar"></div>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    class="header__megamenulink"
+                                                    >Marketing d'influence
+                                                </a>
+                                                <div class="bar"></div>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    class="header__megamenulink"
+                                                    >Marketing d'affiliation
+                                                </a>
+                                                <div class="bar"></div>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    class="header__megamenulink"
+                                                    >Référencement
+                                                </a>
+                                                <div class="bar"></div>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="header__megamenucontent">
+                                        <h2 class="header__megamenutitle">
+                                            Audiovisuel
+                                        </h2>
+                                        <ul class="header__megamenulist">
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    class="header__megamenulink"
+                                                    >Photographie
+                                                </a>
+                                                <div class="bar"></div>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    class="header__megamenulink"
+                                                    >Couverture médiatique
+                                                </a>
+                                                <div class="bar"></div>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    class="header__megamenulink"
+                                                    >Shooting
+                                                </a>
+                                                <div class="bar"></div>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    class="header__megamenulink"
+                                                    >Production audiovisuelle
+                                                </a>
+                                                <div class="bar"></div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__link">
+                                <span class="header__linktitle">Portfolio</span>
+                            </a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__link">
+                                <span class="header__linktitle">Carriere</span>
+                            </a>
+                        </li>
+                        <li class="header__item">
+                            <a href="../contact" class="header__link">
+                                <span class="header__linktitle">Contact</span>
+                            </a>
+                        </li>
                     </ul>
 
                     <p class="header__contact">Contact:237 680 974 148</p>
+
+                    <div class="toggle">
+                        <img
+                            src="../images/menu/burger.png"
+                            alt="icône burger"
+                            class="ouvrir"
+                        />
+                        <img
+                            src="../images/menu/time.png"
+                            alt="icône croix"
+                            class="fermer"
+                        />
+                    </div>
                 </nav>
             </div>
         </header>

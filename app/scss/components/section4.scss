@@ -8,6 +8,9 @@
     }
     .contain{
 	    padding: 0 rem(120);
+        @include breakpoint-down(xmedium){
+            padding: 0 rem(50);
+        }
         @include breakpoint-down(small){
             padding: 0 rem(10);
         }
@@ -27,6 +30,9 @@
         .content__card{
             gap: rem(21);
             row-gap: rem(44);
+            @include breakpoint-down(xmedium){
+                grid-template-columns: repeat(4,1fr);
+            }
             @include breakpoint-down(small){
                 grid-template-columns: repeat(2, 1fr);
             }

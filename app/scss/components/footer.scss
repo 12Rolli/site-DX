@@ -62,12 +62,6 @@
         //     height: 0.132rem;
         //     background: #cbcbcb;
         // }
-        .bar {
-            width: 90%;
-            height: rem(1);
-            background-color: #eaeaea;
-            margin-top: 0.5rem;
-        }
     }
 
     .footersecondpart {
@@ -97,4 +91,10 @@
             margin: 0;
         }
     }
+}
+.bar {
+    width: 90%;
+    height: rem(1);
+    background-color: #eaeaea;
+    margin-top: 0.5rem;
 }

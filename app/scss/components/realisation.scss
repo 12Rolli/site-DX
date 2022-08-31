@@ -1,65 +1,99 @@
 @use '../util' as *;
 
 .section_realisation{
-    margin-bottom: 6rem;
-    background-color: var(--whiteLight);
-    @include breakpoint-down(small){
         display: none;
-    }
-    .content__realisation{
-        position: relative;
-        padding: rem(84) 7.5rem;
-        .content__elts{
-            gap: 6rem;
-            .content__title{
-
-                p{font-size: rem(13);}
-                .row{
-                    padding: rem(20) 0;
-                    &::after{
-                        content: '';
-                        display: table;
-                        clear: both;
-                    }
-                    .column{
-                        float: left;
-                        transition: all 0.6s ease-in-out;
-                        cursor: pointer;
-                       .fenom:hover, .active{
-                            transition: all 0.6s ease-in-out;
-                            transform: scale(1.1);
-                        }
-                        .img_1{    
-                            width: 9.5rem;
-                            height: 9.5rem;
-                        }
-                    }
-                }
+        @include breakpoint-down(small){
+            margin-bottom: 2rem;
+            display: flex;
+            flex-direction: column;
+        }
+    .realisation_contain{
+        grid-gap: rem(10);
+        padding: 0px 1.125rem;
+        margin-bottom: 2rem;
+        .img-container{
+            position: relative;
+            width: 100%;
+            img{
+                display: block;
+                width: 100%;
             }
-
-            .content__subelt{
-                    .mySlides{
-                        display: none;
-                        img{
-                            width: 100%;
-                            height: 75vh;
-                        }
-                    }
-                .prev, .next{
-                    font-size: 1.75rem;
+            .content{
+                background: transparent;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                transition: opacity 1s ease;
+                color: #fff;
+                opacity: 0;
+                .zoom-text{
+                    width: rem(138);
+                    height: rem(90);
+                    background: transparent;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-transform: uppercase;
                     font-weight: bold;
-                    position: relative;
-                    cursor: pointer;
-                    top: -50%;
-                    color: var(--black);
-                }
-                .prev{
-                    left: -7%;
-                }
-                .next{
-                    right: -100%;
+                    transition: transform 0.2s linear;
+                    &:hover{
+                        cursor: zoom-in;
+                        transform: scale(1.1);
+                    }
                 }
             }
         }
     }
+    .image-view{
+        position: fixed;
+        top: 0;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.8);
+        width: 100%;
+        display: none;
+    }
+    .image-box{
+        width:70vw;
+        height: 45vh;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+        z-index: 12;
+        #prev-btn, #next-btn{
+            top: 0%;
+            border-top: rem(20) solid transparent;
+            border-bottom: rem(20) solid transparent;
+            position: absolute;
+            transform: translateY(550%);
+            transition: all 0.5s ease;
+            cursor: pointer;
+        }
+        // #prev-btn{
+        //     border-right: rem(20) solid transparent;
+        //     left: rem(-50);
+        // }
+        
+        #next-btn{
+            border-left: rem(20) solid var(--blue);
+            right: rem(-35);
+        }
+        
+        #next-btn:hover, #prev-btn:hover{
+            opacity: 0.6;
+        }
+        #close-btn{
+            transform: translate(100%,-100%);
+            img{
+                width: rem(41);
+            }
+        }
+    }
+    .center{align-self: center;}
 }

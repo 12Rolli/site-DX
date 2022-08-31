@@ -27,14 +27,14 @@
                 font-weight: 800;
             }
         }
-        .content__bar{
+        .content__sar{
             display: flex;
             justify-content: space-evenly;
             background-color: var(--gray);
             height: rem(2);
             margin-top: -2.8rem;
 
-            .bar{
+            .sar{
                     background-color: var(--blue);
                     width: 20%;
                     height: rem(2);

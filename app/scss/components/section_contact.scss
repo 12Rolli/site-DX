@@ -2,12 +2,19 @@
 
 .section_contact{
     margin-bottom: rem(75);
+    @include breakpoint-down(xmedium){
+        display: none;
+    }
+    .ecran_bloc{
+        margin: 0 rem(147);
+        background: hsl(0, 0%, 91%);
+        
     .content__title{
         h1{font-weight: 100;}
         p{text-align: center;padding-bottom: rem(21);}
     }
     .contact{
-        background: hsl(0, 0%, 91%);
+        
         height: rem(573);
         label{
             font-size: rem(13);
@@ -23,6 +30,8 @@
             margin-top: rem(16);
         }
         .contact1{
+                    border-right: rem(2) solid #878787;
+                    padding-right: rem(85);
             &__subtitle{
                 font-size: rem(20);
                 font-weight: 600;
@@ -68,5 +77,32 @@
                 }
             }
         }
+        .contact2{
+            margin: 0 rem(32);
+            .contact1__subtitle{
+                border-bottom: rem(2) solid var(--grayDark);
+                padding-bottom: rem(66);
+            }
+            &__infos{
+                display: flex;
+                flex-direction: column;
+                border-bottom: rem(2) solid var(--grayDark);
+                &_1{
+                    display: inline-flex;
+                    margin-bottom: rem(27);    
+                    justify-content: space-between;
+                    align-items: center;
+                    p{margin: 0;color: var(--grayDark);}
+                    a{color: var(--grayDark);}
+                }
+            }
+            &__link{
+                gap: rem(9);
+                display: flex;
+                padding: 1rem 0;
+                img{width: rem(27); height: rem(26);}
+            }
+        }
     }
+   }
 }

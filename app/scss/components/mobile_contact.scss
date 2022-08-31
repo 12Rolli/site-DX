@@ -1,0 +1,122 @@
+@use '../util' as *;
+
+.mobile__contact{
+    display: none;
+    margin-bottom: rem(14);
+    @include breakpoint-down(small){
+        display: block;
+    }
+    .mobile_bloc2{
+        padding-top: rem(66);
+        background: hsl(0, 0%, 91%);
+
+        .content__title{
+            h1{font-weight: 100;}
+            p{text-align: center;padding-bottom: rem(21);}
+        }
+        .contact__mob{
+            display: grid;
+            input{
+                border: none;
+                padding: 0.8rem 1rem;
+                border-radius: rem(3);
+                font-weight: 100;
+                font-size: rem(12);
+                width: rem(305);
+                margin-top: rem(7);
+                @include breakpoint-down(xxsmall){
+                    width: rem(273);
+                }
+            }
+            &_1{
+                padding-bottom: rem(43);
+                &__subtitle{
+                    text-align: center;
+                    font-weight: 600;
+                    font-size: rem(14);
+                    margin: 0;
+                }
+                &__desc{
+                    text-align: center;
+                    font-weight: 200;
+                    font-size: 12px;
+                    margin-top: 0;
+                }
+                &__form{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-bottom: rem(20);
+                    &_content{
+                        display: flex;
+                        flex-direction: column;
+                        .drapeau{
+                            flex-direction: row;    
+                            margin-top: rem(7);
+                            background-color: var(--white);
+                            border-radius: 0.1875rem;
+                            input{
+                                margin-top: 0;
+                                width: 17.6rem;
+                                @include breakpoint-down(xxsmall){
+                                    width: 15.6rem;
+                                }
+                            }
+                            img {
+                                width: rem(22);
+                                margin-bottom: -0.5rem;
+                                height: rem(22);
+                                align-self: center;
+                                border-right: rem(1) solid #979797;
+                            }
+                        }
+                    }
+                    .message{
+                        grid-column: 1/3;
+                        textarea{
+                            border: none;
+                            border-radius: rem(3);
+                            padding: 0.3rem;
+                            width: rem(305);
+                            margin-top: rem(7);
+                            @include breakpoint-down(xxsmall){
+                                width: rem(273);
+                            }
+                        }
+                    }
+                }
+                .btn{justify-self: center;}
+            }
+            &_2{
+                color: var(--grayLight);
+                margin: 0 rem(32);
+                &_subtitle{
+                    border-top: rem(2) solid var(--grayDark);
+                    text-align: center;
+                    padding-top: rem(22);
+                    font-size: rem(14);
+                    font-weight: 800;
+                }
+                &_infos{
+                    display: flex;
+                    flex-direction: column;    
+                    margin-left: 5rem;
+                    @include breakpoint-down(xsmall){
+                        margin-left: 4rem;
+                    }
+                    @include breakpoint-down(xxsmall){
+                        margin-left: 2rem;
+                    }
+                    &_1{
+                        display: inline-flex;
+                        margin-bottom: rem(27);    
+                        align-items: center;
+                        gap: 2rem;
+                        p{margin: 0;color: var(--grayDark);}
+                        a{color: var(--grayDark);}
+                    }
+                }
+            }
+        }
+    }
+}

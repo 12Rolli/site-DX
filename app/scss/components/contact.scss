@@ -2,7 +2,7 @@
 
 .bannercontact {
     //box-shadow: 0px 5px 12px 0px #183867;
-    filter: drop-shadow(0 0 0.75rem #183867);
+    filter: drop-shadow(0 0.625rem 0.75rem #183867);
 
     &__container {
         clip-path: polygon(0 0, 100% 0, 100% 56vh, 0 100%);

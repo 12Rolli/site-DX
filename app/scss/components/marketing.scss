@@ -1,0 +1,79 @@
+@use '../util' as *;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+.marketing__header{
+    color: var(--white);
+
+    &_bg{
+        background-image: url(/images/Sites/marketing/bg.png);
+        height: rem(649);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        padding-top: 10rem;
+
+        @include breakpoint-down(xmedium) {
+            height: auto;
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+            background-position: center;
+        }
+    }
+    &_backcolor{
+        background: var(--darkbackground);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+    }
+    &_body{
+        position: relative;
+        &_1{
+            h1 {
+            margin-bottom: rem(-20);
+                @include breakpoint-down(medium) {
+                    font-size: 3rem;
+                }
+                @include breakpoint-down(small) {
+                    font-size: 2.5rem;
+                }
+            }
+        }
+        &_2{
+            gap: 3rem;
+            .bar,.element__pourcentage {
+                height: 0.11rem;
+            }
+        }
+        &_element:hover {
+                .element__graphic {
+                    .element__bar {
+                        span {
+                            display: block;
+                            background-color: var(--info);
+                            transition: width ease 0.3s;
+                        }
+                    }
+                }
+                .element__title {
+                    img {
+                        transform: translateX(50%);
+                    }
+                }
+            }
+    }
+    &_desc{
+        margin-bottom: 1rem;
+        font-weight: 300;
+        font-size: rem(20);
+    }
+    &_contact{
+        a{
+            align-self: center;
+        }
+        img{
+            display: inline-block;
+            width: 100%;
+        }
+    }
+}

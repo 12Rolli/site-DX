@@ -18,11 +18,21 @@
             }
             &--elts{
                 .box{
-                    width: rem(165);
-                    height: rem(165);
                     position: relative;
                     display: inline-block;
                     overflow: hidden;
+                    @include breakpoint-down(large){
+                        width: rem(120);
+                        height: rem(120);
+                    }
+                    @include breakpoint-down(xmedium){
+                        width: rem(100);
+                        height: rem(100);
+                    }
+                    @include breakpoint-down(xextra){
+                        width: rem(80);
+                        height: rem(80);
+                    }
                     &:hover img{
                         opacity: 0;
                     }
