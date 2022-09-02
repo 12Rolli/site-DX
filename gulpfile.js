@@ -26,9 +26,9 @@ function jsTask() {
 }
 
 //Image Task
-//function imgTask() {
-//    return src('images/*').pipe(imagemin()).pipe(gulp.dest('dist/images'));
-//}
+// function imgTask() {
+//     return src('images/*').pipe(imagemin()).pipe(gulp.dest('dist/images'));
+// }
 
 // Browsersync
 function browserSyncServe(cb) {
@@ -54,7 +54,7 @@ function browserSyncReload(cb) {
 function watchTask() {
     watch('*.html', browserSyncReload);
     watch(
-        ['app/scss/**/*.scss', 'app/**/*.js'],
+        ['app/scss/**/*.scss', 'app/**/*.js', 'images/*'],
         series(scssTask, jsTask, browserSyncReload)
     );
 }
