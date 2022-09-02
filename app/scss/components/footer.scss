@@ -62,18 +62,30 @@
         //     height: 0.132rem;
         //     background: #cbcbcb;
         // }
+
+        .design {
+            display: none;
+        }
     }
 
     .footersecondpart {
         display: flex;
-        gap: 4rem;
+        flex-wrap: wrap;
+        gap: 2rem;
         justify-content: center;
+        align-items: center;
         padding: 1rem 0;
         @include breakpoint-down(xsmall) {
             gap: 2rem;
         }
         @include breakpoint-down(xxsmall) {
             gap: 1rem;
+        }
+
+        img {
+            @include breakpoint-down(mobile) {
+                width: 100%;
+            }
         }
     }
     .footercopyright {

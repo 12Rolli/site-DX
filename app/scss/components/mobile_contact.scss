@@ -85,7 +85,7 @@
                         }
                     }
                 }
-                .btn{justify-self: center;}
+                .btn{justify-self: center; background-color: var(--grayLight);border-color: var(--grayLight);}
             }
             &_2{
                 color: var(--grayLight);
@@ -102,17 +102,20 @@
                     flex-direction: column;    
                     margin-left: 5rem;
                     @include breakpoint-down(xsmall){
-                        margin-left: 4rem;
+                        margin-left: 2rem;
+                    }
+                    @include breakpoint-down(mobile){
+                        margin-left: 3rem;
                     }
                     @include breakpoint-down(xxsmall){
-                        margin-left: 2rem;
+                        margin-left: 1rem;
                     }
                     &_1{
                         display: inline-flex;
                         margin-bottom: rem(27);    
                         align-items: center;
                         gap: 2rem;
-                        p{margin: 0;color: var(--grayDark);}
+                        p{margin: 0;color: var(--grayDark);font-weight: bold;}
                         a{color: var(--grayDark);}
                     }
                 }

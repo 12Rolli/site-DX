@@ -1,0 +1,54 @@
+@use '../util' as *;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+#section__photo{
+    position: relative;
+    .photo{
+        
+        &_slider{
+            position:relative;
+            height: rem(700);
+            overflow: hidden;
+            @include breakpoint-down(extralarge){
+                height: 75vh;
+            }
+            @include breakpoint-down(medium){
+                height: 80vh;
+            }
+        }
+        &_slide{
+            position: absolute;
+            display: flex;
+            &_img{
+                width: 100%;
+                height: rem(700);
+                @include breakpoint-down(extralarge){
+                    height: 85vh;
+                }
+                @include breakpoint-down(medium){
+                    height: 80vh;
+                }
+                img{
+                    width: 100%;
+                    height: rem(720);
+            @include breakpoint-down(extralarge){
+                height: 85vh;
+            }
+            @include breakpoint-down(medium){
+                height: 80vh;
+            }
+                }
+            }
+        }
+    }
+}
+@keyframes photo_slide{
+	0%, 20%, 100%	{ left: 0 }
+	25%, 45%		{ left: -100% }
+	50%, 70%		{ left: -200% }
+	75%, 95%		{ left: -300% }
+}
+#section__photo .photo_slide{
+    /* ... avec la propriété animation */
+    animation: photo_slide 32s infinite;
+}

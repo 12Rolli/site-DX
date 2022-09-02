@@ -1,4 +1,5 @@
 // <<<<<<< HEADmenu
+
 // POUR le menu
 
 let toggle = document.querySelector('.toggle');
@@ -80,43 +81,31 @@ const imageBox = document.querySelector('.image-box');
 
 let currentImageIdx = 0;
 
-imageView.addEventListener('click', function(){
-    this.style.display = "none";
-    imageBox.style.display = "none";
-})
+imageView.addEventListener('click', function () {
+    this.style.display = 'none';
+    imageBox.style.display = 'none';
+});
 
-
-zoomBtn.forEach(function(btn, index){
-    btn.addEventListener('click', function(){
-        imageView.style.display = "block";
-        imageBox.style.display = "block";
+zoomBtn.forEach(function (btn, index) {
+    btn.addEventListener('click', function () {
+        imageView.style.display = 'block';
+        imageBox.style.display = 'block';
         currentImageIdx = index + 1;
         currentImageDisplay(currentImageIdx);
-    })
-})
+    });
+});
 
-function currentImageDisplay(position){
+function currentImageDisplay(position) {
     imageBox.style.background = `url(images/Sites/Realisation/img${currentImageIdx}.png) center/cover no-repeat`;
 }
 
-// prevBtn.addEventListener('click', function(){
-//     currentImageIdx--;
-//     if(currentImageIdx === 0){
-//         currentImageIdx = allImages.length;
-//     }
-//     currentImageDisplay(currentImageIdx);
-// })
-
-nextBtn.addEventListener('click', function(){
+nextBtn.addEventListener('click', function () {
     currentImageIdx++;
-    if(currentImageIdx === 5){
+    if (currentImageIdx === 5) {
         currentImageIdx = 1;
     }
     currentImageDisplay(currentImageIdx);
-})
-
-
-
+});
 
 // <!--  gérer les transitions sur qui sommes-nous sur mobile -->
 
@@ -137,45 +126,48 @@ for (i = 0; i < acc.length; i++) {
 
 // gérer les effets de slide sur le header
 
-window.addEventListener("load", () => {
-   	autoSlide();
-})
+window.addEventListener('load', () => {
+    autoSlide();
+});
 function autoSlide() {
     setInterval(() => {
-	    slide(getItemActiveIndex() + 1);
+        slide(getItemActiveIndex() + 1);
     }, 4000); // slide speed = 4s
-    }
+}
 function slide(toIndex) {
-   const itemsArray = Array.from(document.querySelectorAll(".carousel_item"));
-   const itemActive = document.querySelector(".carousel_item__active");
+    const itemsArray = Array.from(document.querySelectorAll('.carousel_item'));
+    const itemActive = document.querySelector('.carousel_item__active');
 
-   if (toIndex >= itemsArray.length) {
-      toIndex = 0;
-   }
+    if (toIndex >= itemsArray.length) {
+        toIndex = 0;
+    }
 
-   const newItemActive = itemsArray[toIndex];
+    const newItemActive = itemsArray[toIndex];
 
-   newItemActive.classList.add("carousel_item__pos_next");
-   setTimeout(() => {
-      newItemActive.classList.add("carousel_item__next");
-      itemActive.classList.add("carousel_item__next");
-   }, 20);
+    newItemActive.classList.add('carousel_item__pos_next');
+    setTimeout(() => {
+        newItemActive.classList.add('carousel_item__next');
+        itemActive.classList.add('carousel_item__next');
+    }, 20);
 
-   newItemActive.addEventListener("transitionend", () => {
-      itemActive.className = "carousel_item";
-      newItemActive.className = "carousel_item carousel_item__active";
-   }, {
-      once: true
-   });
+    newItemActive.addEventListener(
+        'transitionend',
+        () => {
+            itemActive.className = 'carousel_item';
+            newItemActive.className = 'carousel_item carousel_item__active';
+        },
+        {
+            once: true,
+        }
+    );
 }
 
 function getItemActiveIndex() {
-   const itemsArray = Array.from(document.querySelectorAll(".carousel_item"));
-   const itemActive = document.querySelector(".carousel_item__active");
-   const itemActiveIndex = itemsArray.indexOf(itemActive);
-   return itemActiveIndex;
+    const itemsArray = Array.from(document.querySelectorAll('.carousel_item'));
+    const itemActive = document.querySelector('.carousel_item__active');
+    const itemActiveIndex = itemsArray.indexOf(itemActive);
+    return itemActiveIndex;
 }
-
 
 // gérer les transitions sur qui sommes-nous
 
@@ -259,39 +251,39 @@ function changetoapropos() {
     }
 }
 
-
 // gérer les animations sur réalisation Mobile
 
-// var slideIndex = 1;
-// showSlides(slideIndex);
+var slideIndex = 1;
+showSlides(slideIndex);
 
-// function currentSlide(n) {
-//     showSlides((slideIndex = n));
-// }
-// function plusSlides(n) {
-//     showSlides((slideIndex += n));
-// }
-// function showSlides(n) {
-//     var i;
-//     var slides = document.getElementsByClassName('mySlides');
-//     var dots = document.getElementsByClassName('demo');
-//     var captionText = document.getElementById('caption');
+function currentSlide(n) {
+    showSlides((slideIndex = n));
+}
+function plusSlides(n) {
+    showSlides((slideIndex += n));
+}
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName('mySlides');
+    var dots = document.getElementsByClassName('demo');
+    var captionText = document.getElementById('caption');
 
-//     if (n > slides.length) {
-//         slideIndex = 1;
-//     }
-//     if (n < 1) {
-//         slideIndex = slides.length;
-//     }
-//     for (i = 0; i < slides.length; i++) {
-//         slides[i].style.display = 'none';
-//     }
-//     for (i = 0; i < dots.length; i++) {
-//         dots[i].className = dots[i].className.replace(' active', '');
-//     }
+    if (n > slides.length) {
+        slideIndex = 1;
+    }
+    if (n < 1) {
+        slideIndex = slides.length;
+    }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = 'none';
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(' active', '');
+    }
 
-//     slides[slideIndex - 1].style.display = 'block';
-//     dots[slideIndex - 1].className += ' active';
-//     captionText.innerHTML = dots[slideIndex - 1].alt;
-// }
+    slides[slideIndex - 1].style.display = 'block';
+    dots[slideIndex - 1].className += ' active';
+    captionText.innerHTML = dots[slideIndex - 1].alt;
+}
 
+showSlides(slideIndex);

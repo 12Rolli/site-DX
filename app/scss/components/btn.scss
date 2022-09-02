@@ -32,11 +32,13 @@
         height: rem(40);
         margin-left: rem(-23);
         background-color: var(--white);
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.35);
         @include breakpoint-down(small){
             width: rem(38);
             height: rem(38);
         }
         img{
+            width: 100%;
             height: rem(40);
             padding: 0.5rem;
             @include breakpoint-down(small){

@@ -40,6 +40,9 @@
             .card1{
                 height: min-content;
                 box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+                @include breakpoint-down(xmedium){
+                    height: initial;
+                }
                 &__img{
                     img{
                         width: 100%;
@@ -83,6 +86,7 @@
             }
             img{
             width: 100%;
+            height: -webkit-fill-available;
             }
             .text-block {
                 position: absolute;

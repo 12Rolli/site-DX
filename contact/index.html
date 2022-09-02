@@ -13,28 +13,31 @@
             href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap"
             rel="stylesheet"
         />
-        <title>Site DigitalX</title>
+        <title>Contact</title>
         <link rel="stylesheet" href="../dist/style.css" />
         <script defer src="../dist/script.js"></script>
     </head>
     <body>
         <header class="header" id="header">
             <div class="header__container">
-                <img
-                    src="../images/menu/Logo.png"
-                    alt="logo de DX"
-                    class="header__logo"
-                />
-
-                <div class="header__retourarriere">
-                    <img src="../images/menu/back.png" alt="" />
-                </div>
-
+                <a href="../index.html" class="header__linkimg"
+                    ><img
+                        src="../images/menu/Logo.png"
+                        alt="logo de DX"
+                        class="header__logo"
+                /></a>
                 <nav class="header__nav">
+                    <div class="menu__head">
+                        <div class="header__retourarriere">
+                            <img
+                                src="../images/menu/back.png"
+                                alt="icone back arrow"
+                            />
+                        </div>
+                    </div>
                     <ul class="header__list">
-                        <div class="header__currentmenu"></div>
                         <li class="header__item">
-                            <a href="#" class="header__link">
+                            <a href="../index.html" class="header__link">
                                 <span class="header__linktitle">Home</span>
                             </a>
                         </li>
@@ -48,7 +51,10 @@
 
                             <div class="header__megamenu submenu">
                                 <div class="header__megamenucontainer">
-                                    <div class="header__megamenucontent">
+                                    <div
+                                        class="header__megamenucontent header__design"
+                                    >
+                                        <!-- <div class="header__currentmenu"></div> -->
                                         <h2 class="header__megamenutitle">
                                             Design Graphique
                                         </h2>
@@ -89,13 +95,14 @@
                                     </div>
 
                                     <div class="header__megamenucontent">
+                                        <div class="header__currentmenu"></div>
                                         <h2 class="header__megamenutitle">
                                             Développement
                                         </h2>
                                         <ul class="header__megamenulist">
                                             <li>
                                                 <a
-                                                    href="#"
+                                                    href="../development/dev.html"
                                                     class="header__megamenulink"
                                                     >Développement web
                                                 </a>
@@ -103,7 +110,7 @@
                                             </li>
                                             <li>
                                                 <a
-                                                    href="#"
+                                                    href="../development/dev.html"
                                                     class="header__megamenulink"
                                                     >Développement mobile
                                                 </a>
@@ -111,7 +118,7 @@
                                             </li>
                                             <li>
                                                 <a
-                                                    href="#"
+                                                    href="../development/dev.html"
                                                     class="header__megamenulink"
                                                     >Ecommerce
                                                 </a>
@@ -127,7 +134,7 @@
                                         <ul class="header__megamenulist">
                                             <li>
                                                 <a
-                                                    href="#"
+                                                    href="../services marketing/marketing.html"
                                                     class="header__megamenulink"
                                                     >Marketing de contenu
                                                 </a>
@@ -135,7 +142,7 @@
                                             </li>
                                             <li>
                                                 <a
-                                                    href="#"
+                                                    href="../services marketing/marketing.html"
                                                     class="header__megamenulink"
                                                     >Marketing de réseaux
                                                     sociaux
@@ -144,7 +151,7 @@
                                             </li>
                                             <li>
                                                 <a
-                                                    href="#"
+                                                    href="../services marketing/marketing.html"
                                                     class="header__megamenulink"
                                                     >Marketing d'email
                                                 </a>
@@ -152,7 +159,7 @@
                                             </li>
                                             <li>
                                                 <a
-                                                    href="#"
+                                                    href="../services marketing/marketing.html"
                                                     class="header__megamenulink"
                                                     >Marketing audiovisuel
                                                 </a>
@@ -160,7 +167,7 @@
                                             </li>
                                             <li>
                                                 <a
-                                                    href="#"
+                                                    href="../services marketing/marketing.html"
                                                     class="header__megamenulink"
                                                     >Marketing d'influence
                                                 </a>
@@ -168,7 +175,7 @@
                                             </li>
                                             <li>
                                                 <a
-                                                    href="#"
+                                                    href="../services marketing/marketing.html"
                                                     class="header__megamenulink"
                                                     >Marketing d'affiliation
                                                 </a>
@@ -176,7 +183,7 @@
                                             </li>
                                             <li>
                                                 <a
-                                                    href="#"
+                                                    href="../services marketing/marketing.html"
                                                     class="header__megamenulink"
                                                     >Référencement
                                                 </a>
@@ -185,7 +192,9 @@
                                         </ul>
                                     </div>
 
-                                    <div class="header__megamenucontent">
+                                    <div
+                                        class="header__megamenucontent header__audiovisuel"
+                                    >
                                         <h2 class="header__megamenutitle">
                                             Audiovisuel
                                         </h2>
@@ -227,18 +236,21 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="header__item">
+                        <li class="header__item header__itemportfolio">
                             <a href="#" class="header__link">
                                 <span class="header__linktitle">Portfolio</span>
                             </a>
                         </li>
-                        <li class="header__item">
+                        <li class="header__item header__carriere">
                             <a href="#" class="header__link">
                                 <span class="header__linktitle">Carriere</span>
                             </a>
                         </li>
                         <li class="header__item">
-                            <a href="../contact" class="header__link">
+                            <a
+                                href="../contact/index.html"
+                                class="header__link"
+                            >
                                 <span class="header__linktitle">Contact</span>
                             </a>
                         </li>

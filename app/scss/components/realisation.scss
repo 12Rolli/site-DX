@@ -11,6 +11,12 @@
         grid-gap: rem(10);
         padding: 0px 1.125rem;
         margin-bottom: 2rem;
+        h1{
+            font-weight: 300;
+        }
+        p{
+            font-size: rem(19.2);
+        }
         .img-container{
             position: relative;
             width: 100%;
@@ -61,7 +67,7 @@
         width:70vw;
         height: 45vh;
         position: fixed;
-        top: 50%;
+        top: 60%;
         left: 50%;
         transform: translate(-50%, -50%);
         display: none;

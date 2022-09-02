@@ -68,7 +68,7 @@
             text-align: left;
             text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
             @include breakpoint-down(small){
-                font-size: rem(30);
+                font-size: rem(27);
             }
             @include breakpoint-down(xxsmall){
                 font-size: rem(32);
