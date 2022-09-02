@@ -36,6 +36,7 @@
             list-style: none;
             margin: 0;
             padding: 3rem 0 2rem 0;
+            display: -webkit-flex;
             display: flex;
             flex-direction: column;
             gap: 1.5rem;
@@ -69,6 +70,7 @@
     }
 
     .footersecondpart {
+        display: -webkit-flex;
         display: flex;
         flex-wrap: wrap;
         gap: 2rem;

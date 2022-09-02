@@ -38,19 +38,24 @@
                     padding: rem(12) 0 rem(18) rem(15);
                     background-color: var(--white);
                     @include breakpoint-down(xmedium){
-                        padding: 0.75rem 0 1.125rem;
+                        padding: 0.75rem 0 rem(3);
                     }
                 p{
                     font-weight: 600;
                     margin: 0;
                     font-size: 1.025rem;
                     @include breakpoint-down(xmedium){
-                        font-size: rem(23);
+                        font-size: rem(16);
                     }
                     @include breakpoint-down(xsmall){
                         font-size: rem(18);
                     }
                     @include breakpoint-down(xxsmall){
+                        font-size: 0.7rem;
+                    }
+                }
+                span{
+                    @include breakpoint-down(medium){
                         font-size: 0.7rem;
                     }
                 }

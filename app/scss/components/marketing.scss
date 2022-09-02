@@ -148,7 +148,8 @@
 }
 
 .marketing__bloc-2 {
-    background-color: var(--whiteLight);
+    background: var(--darkbackground);
+    width: 100%;
     &_bg {
         display: flex;
         flex-direction: column;
@@ -278,4 +279,23 @@
             }
         }
     }
+}
+.bg--1{
+    background: linear-gradient(rgba(29, 28, 28, 0.604), rgba(26, 24, 24, 0.604)), url(/images/Sites/marketing/contenu.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--white);
+}
+.bg--2{
+    background: linear-gradient(rgba(29, 28, 28, 0.604), rgba(26, 24, 24, 0.604)), url(/images/Sites/marketing/email.png);
+    background-repeat: no-repeat;
+    color: var(--white);
+    background-size: cover;
+    
+}
+.bg--3{
+    background: linear-gradient(rgba(29, 28, 28, 0.604), rgba(26, 24, 24, 0.604)),url(/images/Sites/marketing/sem.png);
+    background-repeat: no-repeat;
+    color: var(--white);
+    background-size: cover;
 }

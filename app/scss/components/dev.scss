@@ -210,6 +210,7 @@
             }
             @include breakpoint-down(mobile) {
                 font-size: 1.5rem;
+                line-height: 2.3rem;
             }
         }
         p {
@@ -360,6 +361,11 @@
             font-size: rem(36);
             line-height: rem(46);
             margin: 0;
+
+            @include breakpoint-down(mobile) {
+                font-size: 1.5rem;
+                line-height: 2.3rem;
+            }
         }
 
         p {
@@ -429,6 +435,7 @@
             }
             @include breakpoint-down(mobile) {
                 font-size: 1.5rem;
+                line-height: 2.3rem;
             }
         }
 
@@ -456,6 +463,11 @@
         font-size: rem(36);
         line-height: rem(46);
         text-align: center;
+
+        @include breakpoint-down(mobile) {
+            font-size: 1.5rem;
+            line-height: 2.3rem;
+        }
     }
     &__content {
         display: none;
@@ -492,6 +504,11 @@
 
             @include breakpoint-down(tablet) {
                 text-align: center;
+            }
+
+            @include breakpoint-down(mobile) {
+                font-size: 1.5rem;
+                line-height: 2.3rem;
             }
         }
         p {
@@ -562,6 +579,10 @@
             text-align: justify;
             @include breakpoint-down(extrasmall) {
                 text-align: center;
+            }
+            @include breakpoint-down(mobile) {
+                font-size: 1.5rem;
+                line-height: 2.3rem;
             }
         }
         h3 {
