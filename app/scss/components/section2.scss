@@ -1,63 +1,57 @@
 @use '../util' as *;
 
-.section__2{
-
+.section__2 {
     background-image: url(../images/Sites/Service/bg.png);
     padding-bottom: rem(120);
-    
-    .content__title{
+
+    .content__title {
         padding: rem(117) 0 rem(40) 0;
-        @include breakpoint-down(small){
+        h1{font-weight: 300;}
+        @include breakpoint-down(small) {
             padding: 1.3125rem 0 2.5rem;
         }
     }
-    .content__elts{
-            @include breakpoint-down(small){
-                grid-template-columns: repeat(1, 1fr);
+    .content__elts {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: rem(10);
+        row-gap: rem(21);
+
+        @include breakpoint-down(medium) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        @include breakpoint-down(extrasmall) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include breakpoint-down(mobile) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .none {
+            @include breakpoint-down(mobile) {
+                display: none;
             }
-            .none{
-                @include breakpoint-down(small){
-                    display: none;
+        }
+
+        img {
+            width: 100%;
+        }
+        &_1 {
+            display: grid;
+            .content__text {
+                padding: rem(12) 0 rem(18) rem(15);
+                background-color: var(--white);
+                @include breakpoint-down(xmedium) {
+                    padding: 0.75rem 0 1rem 1rem;
                 }
-            }
-        &_1{
-                display: grid;
-            .content__img{
-                overflow: hidden;
-                display: grid;
-                width: 100%;
-                img{
-                    width: 100%;
-                    height: -webkit-fill-available;
-                    &:hover{
-                        transform: scale(1.1);
-                    }
-                }
-            }
-            .content__text{
-                    padding: rem(12) 0 rem(18) rem(15);
-                    background-color: var(--white);
-                    @include breakpoint-down(xmedium){
-                        padding: 0.75rem 0 rem(3);
-                    }
-                p{
+                p {
                     font-weight: 600;
-                    margin: 0;
-                    font-size: 1.025rem;
-                    @include breakpoint-down(xmedium){
-                        font-size: rem(16);
-                    }
-                    @include breakpoint-down(xsmall){
-                        font-size: rem(18);
-                    }
-                    @include breakpoint-down(xxsmall){
-                        font-size: 0.7rem;
-                    }
+                    font-size: rem(15);
+                    line-height: rem(18);
+                    text-transform: capitalize;
                 }
                 span{
-                    @include breakpoint-down(medium){
-                        font-size: 0.7rem;
-                    }
+                    font-weight: 300;
+                    text-transform: capitalize;
                 }
             }
         }

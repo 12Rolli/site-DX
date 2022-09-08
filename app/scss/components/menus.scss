@@ -136,6 +136,7 @@
         }
     }
     &__item {
+        //cursor: pointer;
         @include breakpoint-down(extrasmall) {
             border-bottom: rem(1) solid #565656;
         }
@@ -146,6 +147,9 @@
         line-height: rem(17);
         color: var(--white);
         display: inline-block;
+        position: relative;
+        cursor: pointer;
+        word-spacing: 0.4rem;
 
         @include breakpoint-down(tablet) {
             color: var(--black);
@@ -176,6 +180,11 @@
         font-size: rem(14);
         line-height: rem(17);
 
+        &_whatsapp:link,
+        &_whatsapp:visited {
+            color: var(--white);
+        }
+
         @include breakpoint-down(tablet) {
             background-color: var(--black);
             padding: 1rem 1rem;
@@ -194,9 +203,11 @@
         left: 0;
         width: 100%;
         background-color: rgba(0, 0, 0, 0.822);
-        display: none;
+        opacity: 0;
+        visibility: hidden;
         z-index: 50;
         height: 100vh;
+        transition: all 0.5s ease;
         @include breakpoint-down(tablet) {
             top: 6.4rem;
         }
@@ -308,7 +319,8 @@
 
     .link--service:hover {
         .header__megamenu {
-            display: block;
+            opacity: 1;
+            visibility: visible;
             transition: all 0.3s;
         }
     }

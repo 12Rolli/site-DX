@@ -1,25 +1,26 @@
 @use '../util' as *;
 
-.section__tabs{
+.section__tabs {
     padding: rem(64) 0 rem(49) 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    @include breakpoint-down(small){
+    @include breakpoint-down(small) {
         display: none;
     }
 
-    .container{
-        .content{
+    .container {
+        .content {
             gap: rem(80);
-            @include breakpoint-down(medium){
+            padding: 0;
+            @include breakpoint-down(medium) {
                 gap: rem(32);
             }
-            .list{
+            .list {
                 position: relative;
                 justify-self: end;
                 width: 100%;
-                label{
+                label {
                     display: grid;
                     grid-template-columns: 1fr 0.7fr;
                     border-bottom: 1px solid var(--black);
@@ -29,21 +30,21 @@
                     color: var(--grayLight);
                     transition: all 0.3s ease;
                     z-index: 12;
-                    
-                    img{
+
+                    img {
                         justify-self: end;
                     }
-                    .title{
-                    cursor: pointer;
-                    @include breakpoint-down(xmedium){
-                        font-size: rem(16);
-                    }
+                    .title {
+                        cursor: pointer;
+                        @include breakpoint-down(xmedium) {
+                            font-size: rem(16);
+                        }
                     }
                 }
-                .digitale{
+                .digitale {
                     border-bottom: none;
                 }
-                .slider{
+                .slider {
                     position: absolute;
                     left: 0;
                     top: 0;
@@ -56,64 +57,65 @@
                 }
             }
 
-            .text-content{
-                .text{
+            .text-content {
+                .text {
                     display: none;
-                    .title{
+                    .title {
                         padding-top: rem(35);
                         line-height: rem(45);
                         font-size: rem(35);
                         font-weight: bold;
                         color: var(--blue);
-                        @include breakpoint-down(medium){
+                        @include breakpoint-down(medium) {
                             font-size: rem(24);
                         }
-                        @include breakpoint-down(xmedium){
+                        @include breakpoint-down(xmedium) {
                             padding-top: rem(27);
                             line-height: 2rem;
                             font-size: rem(28);
                         }
                     }
-                    p{
+                    p {
                         text-align: justify;
                         line-height: rem(30);
+                        font-weight: 300;
+                        font-size: rem(18);
                     }
                 }
-                .graphique{
+                .graphique {
                     display: block;
-                } 
-            } 
-            input{
+                }
+            }
+            input {
                 display: none;
             }
         }
     }
-    
 }
-#graphique:checked ~ .list .slider{
+#graphique:checked ~ .list .slider {
     top: rem(10);
 }
-#Developpement:checked ~ .list .slider{
-  top: rem(95);
+#Developpement:checked ~ .list .slider {
+    top: rem(95);
 }
-#Marketing:checked ~ .list .slider{
-  top: rem(180);
+#Marketing:checked ~ .list .slider {
+    top: rem(180);
 }
-#visuel:checked ~ .list .slider{
-  top: rem(270);
+#visuel:checked ~ .list .slider {
+    top: rem(270);
 }
-#digitale:checked ~ .list .slider{
-  top: rem(355);
+#digitale:checked ~ .list .slider {
+    top: rem(355);
 }
 #graphique:checked ~ .list .graphique,
 #Developpement:checked ~ .list .Developpement,
 #Marketing:checked ~ .list .Marketing,
 #visuel:checked ~ .list .visuel,
-#digitale:checked ~ .list .digitale{
-  color: var(--blue);
-  white-space: nowrap;
-  font-weight: 800;
-    img{
+#digitale:checked ~ .list .digitale {
+    color: var(--blue);
+    white-space: nowrap;
+    font-weight: 800;
+    img {
         display: none;
     }
 }
@@ -122,12 +124,12 @@
 #Developpement:checked ~ .text-content .Developpement,
 #Marketing:checked ~ .text-content .Marketing,
 #visuel:checked ~ .text-content .visuel,
-#digitale:checked ~ .text-content .digitale{
+#digitale:checked ~ .text-content .digitale {
     display: block;
 }
 #Developpement:checked ~ .text-content .graphique,
 #Marketing:checked ~ .text-content .graphique,
 #visuel:checked ~ .text-content .graphique,
-#digitale:checked ~ .text-content .graphique{
+#digitale:checked ~ .text-content .graphique {
     display: none;
 }

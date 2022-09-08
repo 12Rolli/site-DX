@@ -11,7 +11,7 @@ let headerlist = document.querySelector('.header__list');
 let subMenu;
 let headercontain = document.querySelector('.header__container');
 let returnback = headercontain.querySelector('.header__retourarriere');
-
+//let headermenulink = document.querySelector('.header__megamenulink');
 toggle.addEventListener('click', function () {
     body.classList.toggle('unscrollable');
     fermer.classList.toggle('open');
@@ -56,6 +56,12 @@ function showSubMenu(hasChildren) {
 returnback.addEventListener('click', () => {
     hideSubMenu();
 });
+fermer.addEventListener('click', () => {
+    hideSubMenu();
+});
+// headermenulink.addEventListener('click', () => {
+//     hideSubMenu();
+// });
 
 function hideSubMenu() {
     subMenu.style.animation = 'slideRight 0.5s ease forwards';

@@ -37,17 +37,19 @@
         &_1 {
             h1 {
                 margin-bottom: rem(-20);
-                @include breakpoint-down(medium) {
-                    font-size: 2rem;
-                }
-                @include breakpoint-down(small) {
-                    font-size: 1.5rem;
+                font-weight: 800;
+                font-size: rem(40);
+                text-transform: uppercase;
+                @include breakpoint-down(mobile) {
+                    font-size: rem(26);
+                    word-spacing: 0.4rem;
                 }
             }
             p {
-                @include breakpoint-down(medium) {
-                    font-size: rem(16);
-                }
+                font-weight: 300;
+                font-size: rem(20);
+                line-height: rem(24);
+                padding: 0;
             }
         }
         &_2 {
@@ -129,19 +131,18 @@
         &_title {
             p {
                 text-align: center;
-                font-weight: 800;
+                font-size: rem(16);
+                line-height: rem(19);
                 margin-bottom: 0;
-                @include breakpoint-down(tablet) {
-                    font-size: 0.75rem;
-                }
+                font-weight: 800;
             }
         }
         &_desc {
             text-align: center;
             span {
-                @include breakpoint-down(tablet) {
-                    font-size: 0.75rem;
-                }
+                font-weight: 300;
+                font-size: rem(14);
+                line-height: rem(17);
             }
         }
     }
@@ -153,8 +154,8 @@
     &_bg {
         display: flex;
         flex-direction: column;
-        padding-top: rem(77);
-        padding-bottom: rem(82);
+        padding-top: 8rem;
+        padding-bottom: 10rem;
         @include breakpoint-down(large) {
             padding-bottom: rem(50);
             padding-top: rem(45);
@@ -163,16 +164,17 @@
             text-align: center;
             font-weight: 800;
             font-size: rem(32);
-            @include breakpoint-down(medium) {
-                font-size: 1.7rem;
+
+            @include breakpoint-down(mobile) {
+                font-size: rem(26);
+                word-spacing: 0.4rem;
             }
         }
         p {
-            text-align: center;
             font-weight: 400;
-            @include breakpoint-down(tablet) {
-                font-size: 0.75rem;
-            }
+            font-size: rem(16);
+            line-height: 181%;
+            text-align: justify;
         }
         .center {
             align-self: center;
@@ -182,7 +184,7 @@
 }
 
 .marketing__bloc-3 {
-    @include breakpoint-down(small){
+    @include breakpoint-down(small) {
         display: none;
     }
     &_bg {
@@ -229,9 +231,11 @@
             }
         }
         &_img {
+            align-self: center;
             img {
                 width: 100%;
-                height: -webkit-fill-available;
+
+                //height: -webkit-fill-available;
             }
         }
     }
@@ -240,17 +244,17 @@
 .marketing__bloc-4 {
     background-color: var(--white);
 }
-.marketing__bloc-5{
+.marketing__bloc-5 {
     display: none;
-    @include breakpoint-down(small){
+    @include breakpoint-down(small) {
         display: flex;
     }
-    &_bg{
+    &_bg {
         padding-top: rem(29);
         padding-bottom: rem(34);
         grid-template-columns: 1fr;
         gap: 1rem;
-        &_elt{
+        &_elt {
             align-self: center;
             display: flex;
             flex-direction: column;
@@ -260,16 +264,16 @@
                 font-size: rem(27.2);
             }
         }
-        &_img{
-            img{
+        &_img {
+            img {
                 width: 100%;
                 height: -webkit-fill-available;
             }
         }
-        &_text{
+        &_text {
             display: flex;
             flex-direction: column;
-            p{
+            p {
                 font-weight: 400;
                 padding-bottom: rem(29);
                 text-align: center;
@@ -280,22 +284,34 @@
         }
     }
 }
-.bg--1{
-    background: linear-gradient(rgba(29, 28, 28, 0.604), rgba(26, 24, 24, 0.604)), url(../images/Sites/marketing/contenu.png);
+.bg--1 {
+    background: linear-gradient(
+            rgba(29, 28, 28, 0.604),
+            rgba(26, 24, 24, 0.604)
+        ),
+        url(../images/Sites/marketing/contenu.png);
     background-repeat: no-repeat;
     background-size: cover;
     color: var(--white);
 }
-.bg--2{
-    background: linear-gradient(rgba(29, 28, 28, 0.604), rgba(26, 24, 24, 0.604)), url(../images/Sites/marketing/email.png);
+.bg--2 {
+    background: linear-gradient(
+            rgba(29, 28, 28, 0.604),
+            rgba(26, 24, 24, 0.604)
+        ),
+        url(../images/Sites/marketing/email.png);
     background-repeat: no-repeat;
     color: var(--white);
     background-size: cover;
-    
 }
-.bg--3{
-    background: linear-gradient(rgba(29, 28, 28, 0.604), rgba(26, 24, 24, 0.604)),url(../images/Sites/marketing/sem.png);
+.bg--3 {
+    background: linear-gradient(
+            rgba(29, 28, 28, 0.604),
+            rgba(26, 24, 24, 0.604)
+        ),
+        url(../images/Sites/marketing/sem.png);
     background-repeat: no-repeat;
     color: var(--white);
     background-size: cover;
+    background-position: center;
 }

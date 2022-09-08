@@ -1,57 +1,62 @@
 @use '../util' as *;
 
-.section__realisation{
+.section__realisation {
     display: block;
     margin-bottom: 2rem;
     padding: rem(97) 0 rem(72);
     display: flex;
     flex-direction: column;
     background-color: var(--whiteLight);
-    @include breakpoint-down(small){
+    @include breakpoint-down(small) {
         display: none;
     }
-    .center{
+    .center {
         margin-top: rem(51.07);
         justify-self: center;
     }
-    .contain{
-        gap: rem(91);
-        padding: 0 rem(60);
-        margin-bottom: 2rem;
-        position: relative;
-        @include breakpoint-down(tablet){
-            gap: rem(27);
-        }
+    .container{text-align: center;
         h1{
             font-weight: 300;
         }
-        .ecran_bloc_2{
+    p{
+        text-transform: none;
+    }
+}
+    .contain {
+        gap: rem(91);
+        //padding: 0 rem(60);
+        margin-bottom: 2rem;
+        position: relative;
+        @include breakpoint-down(tablet) {
+            gap: rem(27);
+        }
+        h1 {
+            font-weight: 300;
+            text-transform: uppercase;
+        }
+        .ecran_bloc_2 {
             position: relative;
-            .mySlides{
-                transition: all .5s ease-in-out;
+            .mySlides {
+                transition: all 0.5s ease-in-out;
                 display: none;
-                img{
+                img {
                     width: 100%;
-                    @include breakpoint-down(medium){
-                        height: 50vh;
-                    }
-                    @include breakpoint-down(tablet){
-                        height: 70vw;
-                    }
                 }
             }
-            .prev, .next{
+            .prev,
+            .next {
                 position: absolute;
                 top: 40%;
-                cursor:pointer;
-                width:  auto;
+                cursor: pointer;
+                width: auto;
                 padding: rem(16);
-                color: var(--black);
-                font-weight:bold;
-                font-size: rem(16);
-                transition: all .5s ease-in-out;
+                color: var(--white);
+                font-weight: bold;
+                font-size: rem(23);
+                transition: all 0.5s ease-in-out;
                 border-radius: 0 rem(3) rem(3) 0;
-                &:hover, &:hover {
+                &:hover,
+                &:hover {
                     color: var(--blue);
                     transition: 0.4s;
                 }
@@ -59,37 +64,38 @@
             .next {
                 right: 0;
                 border-radius: 0 3px 3px 0;
-                @include breakpoint-down(large){
+                @include breakpoint-down(large) {
                     right: -10%;
                 }
             }
-            .prev{
-                @include breakpoint-down(large){
+            .prev {
+                left: 0;
+                @include breakpoint-down(large) {
                     left: -10%;
                 }
             }
         }
-        .ecran_bloc{
-            .row{
+        .ecran_bloc {
+            .row {
                 gap: rem(8);
                 &:after {
-                    content: "";
+                    content: '';
                     display: table;
-                    clear:both;
+                    clear: both;
                 }
-                .column{
+                .column {
                     float: left;
                     .demo {
-                        transition: all .5s ease-in-out;
-                        &:hover{
+                        transition: all 0.5s ease-in-out;
+                        &:hover {
                             transition: 0.3s;
                         }
                     }
-                    .active{
-                        transition: all .5s ease-in-out;
+                    .active {
+                        transition: all 0.5s ease-in-out;
                         transform: scale(1.06);
                     }
-                    img{
+                    img {
                         width: 100%;
                         cursor: pointer;
                     }

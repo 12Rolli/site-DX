@@ -5,8 +5,8 @@
 
     &__backimg {
         background-image: url(../images/development/bannerdev.png);
-        //height: rem(649);
-        height: auto;
+        height: rem(649);
+        //height: auto;
         background-size: cover;
         background-repeat: no-repeat;
         position: relative;
@@ -30,10 +30,15 @@
     }
     &__body {
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         position: relative;
+        transform: translate(0, 50%);
         //gap: 10rem;
 
+        @include breakpoint-down(xmedium) {
+            transform: initial;
+            grid-template-columns: repeat(1, 1fr);
+        }
         @include breakpoint-down(tablet) {
             //gap: 3rem;
             grid-template-columns: repeat(1, 1fr);
@@ -440,15 +445,15 @@
         }
 
         p {
-            font-weight: 400;
+            font-weight: 300;
             font-size: rem(18);
-            line-height: rem(40);
+            line-height: rem(30);
             text-align: justify;
             margin: 0;
             color: var(--white);
-            @include breakpoint-down(tablet) {
-                text-align: left;
-            }
+            // @include breakpoint-down(tablet) {
+            //     text-align: left;
+            // }
         }
     }
 }
@@ -697,11 +702,11 @@
     &__content:hover {
         img {
             transform: scale(1.1);
-            transition: ease-in 0.3s;
+            transition: ease-in-out 0.5s;
         }
         .otherservice__text {
             transform: scale(1.1);
-            transition: ease-in 0.3s;
+            transition: ease-in-out 0.5s;
 
             p {
                 font-weight: 500;
