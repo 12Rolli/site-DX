@@ -8,7 +8,7 @@ const babel = require('gulp-babel');
 const terser = require('gulp-terser');
 const browsersync = require('browser-sync').create();
 const imagemin = require('gulp-imagemin');
-const gulp = require('gulp')
+const gulp = require('gulp');
 
 // Sass Task
 function scssTask() {
@@ -51,33 +51,38 @@ function browserSyncReload(cb) {
     cb();
 }
 
-task('copy-assets', series(
-    function() {
-        return src(['index.html']).pipe(dest('dist'));
-    },
-    function() {
-        return src(['app/pages/**/*']).pipe(dest('dist'));
-    },
-    scssTask,
-    jsTask,
-    imgTask
-));
-
-task('dry', series(
+task(
     'copy-assets',
-    function() {
-        return src(['dist/**/*']).pipe(dest('/Users/ronald/project/digitalx/site/tmp'));
-    }
-));
+    series(
+        function () {
+            return src(['index.html']).pipe(dest('dist'));
+        },
+        function () {
+            return src(['app/pages/**/*']).pipe(dest('dist'));
+        },
+        scssTask,
+        jsTask,
+        imgTask
+    )
+);
 
-task('deploy', series(
-    'copy-assets',
-    function() {
-        return src(['dist/**/*']).pipe(dest('/var/www/digital-x-sarl.com/html'));
-    }
-));
+task(
+    'dry',
+    series('copy-assets', function () {
+        return src(['dist/**/*']).pipe(
+            dest('/Users/ronald/project/digitalx/site/tmp')
+        );
+    })
+);
 
-
+task(
+    'deploy',
+    series('copy-assets', function () {
+        return src(['dist/**/*']).pipe(
+            dest('/var/www/digital-x-sarl.com/html')
+        );
+    })
+);
 
 // Watch Task
 function watchTask() {
@@ -89,4 +94,10 @@ function watchTask() {
 }
 
 // Default Gulp Task
-exports.default = series(scssTask, jsTask, imgTask, browserSyncServe, watchTask);
+exports.default = series(
+    scssTask,
+    jsTask,
+    imgTask,
+    browserSyncServe,
+    watchTask
+);
