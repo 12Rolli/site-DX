@@ -1,0 +1,1081 @@
+<!-- layout.html -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,600&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;0,600;0,800;1,400;1,500;1,700;1,800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Kaushan+Script&display=swap" rel="stylesheet"/>
+
+  <link rel="apple-touch-icon" sizes="57x57" href="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662909412/dx/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662909412/dx/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662909412/dx/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662909412/dx/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662909412/dx/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662909412/dx/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662909412/dx/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662909412/dx/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662909412/dx/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662909412/dx/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662909412/dx/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662909412/dx/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662909412/dx/favicon/favicon-16x16.png">
+  <link rel="manifest" href="https://res.cloudinary.com/digital-x-sarl/raw/upload/v1662909411/dx/favicon/manifest.json">
+  <meta name="facebook-domain-verification" content="diywpjvvozmjhfj6di8yhclpq8fwlv" />
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662909412/dx/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '999752634013169');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"src="https://www.facebook.com/tr?id=999752634013169&ev=PageView&noscript=1"/>
+  </noscript>
+
+  <link rel="stylesheet" href="./style.css" />
+
+  <title>Marketing</title>
+</head>
+<body>
+<header class="header" id="header">
+    <div class="header__container">
+        <a href="index.html" class="header__linkimg"
+            ><img
+                src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/menu/Logo.png"
+                alt="logo de DX"
+                class="header__logo"
+        /></a>
+        <nav class="header__nav">
+            <div class="menu__head">
+                <div class="header__retourarriere">
+                    <img
+                        src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/menu/back.png"
+                        alt="icone back arrow"
+                    />
+                </div>
+            </div>
+            <ul class="header__list">
+                <li class="header__item">
+                    <a href="index.html" class="header__link">
+                        <span class="header__linktitle">Home</span>
+                    </a>
+                </li>
+
+                <li class="link--service header__item header__child">
+                    <span class="header__link">
+                        <span class="header__linktitle">Nos services</span>
+                    </span>
+
+                    <div class="header__megamenu submenu">
+                        <div class="header__megamenucontainer">
+                            <div class="header__megamenucontent header__design">
+                                <!-- <div class="header__currentmenu"></div> -->
+                                <h2 class="header__megamenutitle">
+                                    Design Graphique
+                                </h2>
+                                <ul class="header__megamenulist">
+                                    <li>
+                                        <a href="#" class="header__megamenulink"
+                                            >UI et UX Design
+                                        </a>
+                                        <div class="bar"></div>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="header__megamenulink"
+                                            >Graphic Design
+                                        </a>
+                                        <div class="bar"></div>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="header__megamenulink"
+                                            >Video Production
+                                        </a>
+                                        <div class="bar"></div>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="header__megamenulink"
+                                            >Web Design
+                                        </a>
+                                        <div class="bar"></div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="header__megamenucontent">
+                                <div class="header__currentmenu"></div>
+                                <h2 class="header__megamenutitle">
+                                    Développement
+                                </h2>
+                                <ul class="header__megamenulist">
+                                    <li>
+                                        <a
+                                            href="dev.html"
+                                            class="header__megamenulink"
+                                            >Développement web
+                                        </a>
+                                        <div class="bar"></div>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="dev.html"
+                                            class="header__megamenulink"
+                                            >Développement mobile
+                                        </a>
+                                        <div class="bar"></div>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="dev.html"
+                                            class="header__megamenulink"
+                                            >Ecommerce
+                                        </a>
+                                        <div class="bar"></div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="header__megamenucontent">
+                                <h2 class="header__megamenutitle">Marketing</h2>
+                                <ul class="header__megamenulist">
+                                    <li>
+                                        <a
+                                            href="marketing.html#marketingcontenu"
+                                            class="header__megamenulink"
+                                            >Marketing de contenu
+                                        </a>
+                                        <div class="bar"></div>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="marketing.html#marketingreseau"
+                                            class="header__megamenulink"
+                                            >Marketing de réseaux sociaux
+                                        </a>
+                                        <div class="bar"></div>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="marketing.html#marketingemail"
+                                            class="header__megamenulink"
+                                            >Marketing d'email
+                                        </a>
+                                        <div class="bar"></div>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="marketing.html"
+                                            class="header__megamenulink"
+                                            >Marketing audiovisuel
+                                        </a>
+                                        <div class="bar"></div>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="marketing.html#marketinginfluence"
+                                            class="header__megamenulink"
+                                            >Marketing d'influence
+                                        </a>
+                                        <div class="bar"></div>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="marketing.html#marketingaffiliation"
+                                            class="header__megamenulink"
+                                            >Marketing d'affiliation
+                                        </a>
+                                        <div class="bar"></div>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="marketing.html#marketingsem"
+                                            class="header__megamenulink"
+                                            >Référencement
+                                        </a>
+                                        <div class="bar"></div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div
+                                class="header__megamenucontent header__audiovisuel"
+                            >
+                                <h2 class="header__megamenutitle">
+                                    Audiovisuel
+                                </h2>
+                                <ul class="header__megamenulist">
+                                    <li>
+                                        <a
+                                            href="photographie.html"
+                                            class="header__megamenulink"
+                                            >Photographie
+                                        </a>
+                                        <div class="bar"></div>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="photographie.html"
+                                            class="header__megamenulink"
+                                            >Couverture médiatique
+                                        </a>
+                                        <div class="bar"></div>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="photographie.html"
+                                            class="header__megamenulink"
+                                            >Shooting
+                                        </a>
+                                        <div class="bar"></div>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="photographie.html"
+                                            class="header__megamenulink"
+                                            >Production audiovisuelle
+                                        </a>
+                                        <div class="bar"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="header__item ">
+                    <a href="portfolio.html" class="header__link">
+                        <span class="header__linktitle">Portfolio</span>
+                    </a>
+                </>
+                <li class="header__item header__carriere">
+                    <a href="#" class="header__link">
+                        <span class="header__linktitle">Carriere</span>
+                    </a>
+                </li>
+                <li class="header__item">
+                    <a href="contact.html" class="header__link">
+                        <span class="header__linktitle">Contact</span>
+                    </a>
+                </li>
+            </ul>
+
+            <p class="header__contact">
+                WhatsApp:
+                <a
+                    class="header__contact_whatsapp"
+                    href="https://wa.me/237676930245"
+                    >+237 676 93 02 45</a
+                >
+            </p>
+
+            <div class="toggle">
+                <img
+                    src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/menu/burger.png"
+                    alt="icône burger"
+                    class="ouvrir"
+                />
+                <img
+                    src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/menu/time.png"
+                    alt="icône croix"
+                    class="fermer"
+                />
+            </div>
+        </nav>
+    </div>
+</header>
+
+
+
+<main>
+    <section class="marketing__header">
+        <div class="marketing__header_bg">
+            <div class="marketing__header_backcolor"></div>
+            <div class="marketing__header_body grid__2_col content gap-10">
+                <div class="marketing__header_body_1 flex-column">
+                    <h1>la promotion sur le web</h1>
+                    <p class="marketing__header_desc">
+                        Une stratégie digitale sur mesure est une stratégie
+                        rentable à long terme
+                    </p>
+                    <div class="btn_flex marketing__header_contact">
+                        <a
+                            href="contact.html"
+                            class="btn btn--blue"
+                            >Commencez</a
+                        >
+                        <a href="contact.html" class="btn_circle">
+                            <img
+                                src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/Sites/flech/arrow-blue-small.svg"
+                                alt="fleche_bleu"
+                            />
+                        </a>
+                    </div>
+                </div>
+                <div class="marketing__header_body_2 flex-column">
+                    <div class="marketing_ligne">
+                        <p>Le bloc Marketing de contenu</p>
+                        <img
+                            src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/Sites/marketing/fleche.png"
+                            alt="fleche"
+                        />
+                    </div>
+                    <div class="marketing_ligne">
+                        <p>Le bloc Markéting de réseaux sociaux</p>
+                        <img
+                            src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/Sites/marketing/fleche.png"
+                            alt="fleche"
+                        />
+                    </div>
+                    <div class="marketing_ligne">
+                        <p>Le bloc Marketing d’email</p>
+                        <img
+                            src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/Sites/marketing/fleche.png"
+                            alt="fleche"
+                        />
+                    </div>
+                    <div class="marketing_ligne">
+                        <p>Le bloc Marketing Audiovisuel</p>
+                        <img
+                            src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/Sites/marketing/fleche.png"
+                            alt="fleche"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="marketing__bloc-1 flex-line content">
+        <div class="bloc-1">
+            <div class="bloc-1_img">
+                <img
+                    src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/Sites/marketing/img1.png"
+                    alt="img1"
+                />
+            </div>
+            <div class="bloc-1_title">
+                <p>Sensibilisation à la marque</p>
+            </div>
+            <div class="bloc-1_desc">
+                <span
+                    >Établissez des relations et partagez les valeurs de
+                    votre entreprise grâce à un contenu bien conçu, adapté à
+                    votre marque et à votre public cible.</span
+                >
+            </div>
+        </div>
+        <div class="bloc-1">
+            <div class="bloc-1_img">
+                <img
+                    src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/Sites/marketing/img2.png"
+                    alt="img1"
+                />
+            </div>
+            <div class="bloc-1_title">
+                <p>Croissance de l'entreprise</p>
+            </div>
+            <div class="bloc-1_desc">
+                <span
+                    >Accélérez la croissance et les bénéfices de votre
+                    entreprise grâce à des méthodes de marketing numérique
+                    éprouvées, notamment le référencement, le référencement
+                    payant, les médias sociaux, etc.</span
+                >
+            </div>
+        </div>
+        <div class="bloc-1">
+            <div class="bloc-1_img">
+                <img
+                    src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/Sites/marketing/img3.png"
+                    alt="img1"
+                />
+            </div>
+            <div class="bloc-1_title"><p>Retour sur investissement</p></div>
+            <div class="bloc-1_desc">
+                <span
+                    >Augmentez votre retour sur investissement grâce à des
+                    solutions de marketing numérique élaborées par des
+                    experts.</span
+                >
+            </div>
+        </div>
+    </section>
+
+    <section class="marketing__bloc-2 bg--1" id="marketingcontenu">
+        <div class="content marketing__bloc-2_bg">
+            <h2>Marketing de contenu</h2>
+            <p>
+                Le marketing de contenu est une discipline incontournable
+                pour toutes entreprises qui désirent développer son
+                activité. Cette stratégie marketing repose sur la création
+                de contenu à forte valeur ajoutée dans l’objectif d’attirer,
+                engager et conserver une audience qualifiée. Mais comment
+                mettre en place une telle stratégie ? DIGITAL X SARL vous
+                aider dans l’élaboration de la vôtre cliquez ici (lien de la
+                page de vente)
+            </p>
+            <!-- <div class="center">
+                <a href="#" class="btn">Lire Plus</a>
+            </div> -->
+        </div>
+    </section>
+
+    <section class="marketing__bloc-3" id="marketingreseau">
+        <div class="content grid__2_col marketing__bloc-3_bg">
+            <div class="marketing__bloc-3_bg_text">
+                <h2>Markéting de réseaux sociaux</h2>
+                <p>
+                    Le Marketing des réseaux sociaux (ou Social Media
+                    Marketing) est une forme de Marketing sur Internet qui
+                    implique la création et le partage de contenu sur les
+                    réseaux sociaux. Le Marketing sur les réseaux sociaux
+                    inclut la publication des contenus (textuel, image,
+                    vidéo) qui favorisent l’engagement du public. Pour la
+                    création et l’animation de vos différentes plateformes
+                    sociales, DIGITAL X SARL met son expertise à votre
+                    disposition. Pour en savoir plus cliquez ici (lien de
+                    page de vente)
+                </p>
+                <!-- <div class="center">
+                    <a href="#" class="btn">Lire Plus</a>
+                </div> -->
+            </div>
+            <div class="marketing__bloc-3_bg_img">
+                <img
+                    src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/Sites/marketing/sociaux.png"
+                    alt=""
+                />
+            </div>
+        </div>
+    </section>
+    <section class="marketing__bloc-5" id="marketingreseau">
+        <div class="content grid__2_col marketing__bloc-5_bg">
+            <div class="marketing__bloc-5_bg_elt">
+                <h2>Markéting de réseaux sociaux</h2>
+                <div class="marketing__bloc-3_bg_img">
+                    <img
+                        src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/Sites/marketing/sociaux.png"
+                        alt=""
+                    />
+                </div>
+            </div>
+            <div class="marketing__bloc-5_bg_text">
+                <p>
+                    Le Marketing des réseaux sociaux (ou Social Media
+                    Marketing) est une forme de Marketing sur Internet qui
+                    implique la création et le partage de contenu sur les
+                    réseaux sociaux. Le Marketing sur les réseaux sociaux
+                    inclut la publication des contenus (textuel, image,
+                    vidéo) qui favorisent l’engagement du public. Pour la
+                    création et l’animation de vos différentes plateformes
+                    sociales, DIGITAL X SARL met son expertise à votre
+                    disposition. Pour en savoir plus cliquez ici (lien de
+                    page de vente)
+                </p>
+                <!-- <div class="center">
+                    <a href="#" class="btn">Lire Plus</a>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <section class="marketing__bloc-2 bg--2" id="marketingemail">
+        <div class="content marketing__bloc-2_bg">
+            <h2>Marketing d’email</h2>
+            <p>
+                Beaucoup de personnes possèdent une adresse mail, car elle
+                est souvent demandée dans les sites pour avoir accès à
+                certains privilèges. Le Marketing d’email a un grand
+                avantage, c’est une stratégie parmi tant d’autre, elle est
+                peu coûteuse, elle permet de personnaliser les messages que
+                vous souhaitez envoyer de façon automatique et programmée à
+                vos prospects. Elle permet de maintenir la relation avec le
+                client, et de lui faire parvenir des nouveautés, des
+                informations, ou des promotions de l’entreprise. En échange
+                de leur adresse mail, vous pourriez offrir des bons de
+                réduction (par exemple) à votre prospect. Et ainsi évaluer
+                vos performances. Alors n’hésitez plus contactez-nous pour
+                avoir d’avantages d’informations.
+            </p>
+            <!-- <div class="center">
+                <a href="#" class="btn">Lire Plus</a>
+            </div> -->
+        </div>
+    </section>
+
+    <section class="marketing__bloc-3" id="marketinginfluence">
+        <div class="content grid__2_col marketing__bloc-3_bg">
+            <div class="marketing__bloc-3_bg_img">
+                <img
+                    src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/Sites/marketing/influence.png"
+                    alt=""
+                />
+            </div>
+            <div class="marketing__bloc-3_bg_text">
+                <h2>Marketing d’influence</h2>
+                <p>
+                    Le Marketing d’influence reste un domaine nettement
+                    confus aujourd'hui. Il consiste à déterminer à travers
+                    des analyses, des influenceurs ayant grandi une forte
+                    communauté qui leur démontre une confiance, qui seront
+                    prescrit pour la promotion d’un produit ou d’un service.
+                </p>
+                <!-- <div class="center">
+                    <a href="#" class="btn">Lire Plus</a>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <section class="marketing__bloc-5" id="marketinginfluence">
+        <div class="content grid__2_col marketing__bloc-5_bg">
+            <div class="marketing__bloc-5_bg_elt">
+                <h2>Marketing d’influence</h2>
+                <div class="marketing__bloc-3_bg_img">
+                    <img
+                        src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/Sites/marketing/influence.png"
+                        alt=""
+                    />
+                </div>
+            </div>
+            <div class="marketing__bloc-5_bg_text">
+                <p>
+                    Le Marketing d’influence reste un domaine nettement
+                    confus aujourd'hui. Il consiste à déterminer à travers
+                    des analyses, des influenceurs ayant grandi une forte
+                    communauté qui leur démontre une confiance, qui seront
+                    prescrit pour la promotion d’un produit ou d’un service.
+                </p>
+                <!-- <div class="center">
+                    <a href="#" class="btn">Lire Plus</a>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <section
+        class="marketing__bloc-2 marketing__bloc-4"
+        id="marketingaffiliation"
+    >
+        <div class="content marketing__bloc-2_bg">
+            <h2>Marketing d’affiliation</h2>
+            <p>
+                Une stratégie qui permet à deux marques de profiter d’une
+                activité l’une de l’autre. Elle comporte quatre (4) acteurs
+                majeurs qui sont ; l’affilié, l’annonceur, le consommateur
+                et la plateforme d’affiliation. Alors, quel qu'en soit votre
+                position, nous vous suivrons dans vos projets d’affiliation
+                afin de tirer bon profit des activités d’affiliation.
+            </p>
+        </div>
+    </section>
+
+    <section class="marketing__bloc-2 bg--3" id="marketingsem">
+        <div class="content marketing__bloc-2_bg">
+            <h2>Search Engine Marketing (SEM)</h2>
+            <p>
+                Le SEM représente des techniques visées à attirer plus de
+                trafic organique sur votre site internet. Nous mettons à
+                votre disposition des spécialistes pour augmenter la qualité
+                et la quantité de trafic pour un meilleur classement sur les
+                moteurs de recherches.
+            </p>
+            <!-- <div class="center">
+                <a href="#" class="btn">Lire Plus</a>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- -------------CONTACT-------------------------------- -->
+    <section class="section_contact">
+  <div class="ecran_bloc">
+    <div class="content__title content__title--black">
+      <h1>Contactez-Nous</h1>
+      <p>
+        VOS INFORMATIONS NOUS PERMETTRONT DE MIEUX VOUS
+        CONNAÎTRE.
+      </p>
+    </div>
+    <div class="contact__ecran container">
+      <div class="contact__ecran_1">
+        <p class="contact__ecran_1__subtitle">
+          Envoyez nous un message
+        </p>
+        <p class="contact__ecran_1__desc">
+          Envoyez nous un message et nous allons repondre
+          en 24 heures
+        </p>
+
+        <form id="contactForm" class="contact__ecran_1__form">
+          <div class="contact__ecran_1__form_content">
+            <label for="nom">Nom complet</label>
+            <input
+                type="text"
+                id="nom"
+                name="nom"
+                placeholder="Entrez votre nom complet"
+                required
+            />
+          </div>
+
+          <div class="contact__ecran_1__form_content">
+            <label for="email">Email</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Ecrivez votre mail ici"
+                required
+            />
+          </div>
+
+          <div class="contact__ecran_1__form_content">
+            <label for="telephone">Téléphone</label>
+            <div class="contact1__content drapeau">
+              <img
+                  src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/contact/drapeau.png"
+                  alt="icône d'un drapeau"
+              />
+              <input
+                  type="tel"
+                  id="telephone"
+                  name="telephone"
+                  placeholder="Numero de téléphone"
+              />
+            </div>
+          </div>
+
+          <div class="contact__ecran_1__form_content">
+            <label for="organisation">Organisation</label>
+            <input
+                type="text"
+                id="organisation"
+                name="organisation"
+                placeholder="Nom de l’organisation"
+                required
+            />
+          </div>
+
+          <div
+              class="contact__ecran_1__form_content message"
+          >
+                            <textarea
+                                id="message"
+                                name="message"
+                                cols="30"
+                                rows="10"
+                                placeholder="Entrez votre message ici"
+                            ></textarea>
+          </div>
+          <div></div>
+          <div class="end">
+            <a onclick="submit()" class="btn">Envoyez</a>
+          </div>
+        </form>
+      </div>
+      <div class="contact__ecran_2">
+        <p class="contact__ecran_2_subtitle">
+          Detail du contact
+        </p>
+        <div class="contact__ecran_2_infos">
+          <div class="contact__ecran_2_infos_1">
+            <img
+                src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/contact/location.png"
+                alt="localisation"
+            />
+            <p>Kotto Rue des châteaux</p>
+          </div>
+          <div class="contact__ecran_2_infos_1">
+            <img
+                src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/contact/mail.png"
+                alt="sms"
+            />
+            <p>
+              <a href="mailto:info@digital-x-sarl.com"
+              >info@digital-x-sarl.com</a
+              >
+            </p>
+          </div>
+          <div class="contact__ecran_2_infos_1">
+            <img
+                src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/contact/call.png"
+                alt="call"
+            />
+            <p>680974148-676930245 (WhatsApp)</p>
+          </div>
+          <div class="contact__ecran_2_infos_1">
+            <img
+                src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/contact/clock.png"
+                alt="clock"
+            />
+            <p>Du lundi au vendredi (8h - 17h)</p>
+          </div>
+        </div>
+        <div class="contact__ecran_2_link">
+          <a href="https://www.facebook.com/digitalxsarl"
+          ><img
+              src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/footer/Vector.png"
+              alt=""
+          /></a>
+          <a href="https://www.instagram.com/digitalxsarl/"
+          ><img
+              src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/footer/instagram.png"
+              alt=""
+          /></a>
+          <a href="https://www.linkedin.com/company/digital-x-sarl/"
+          ><img
+              src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/footer/linkdin.png"
+              alt=""
+          /></a>
+          <a href="https://twitter.com/digitalxsarl"
+          ><img
+              src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/footer/Group_109.png"
+              alt=""
+          /></a>
+          
+          <a href="https://www.youtube.com/channel/UCGLGjzLsbqAT2oFdEBNjyAA"
+          ><img
+              src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/footer/Group.png"
+              alt=""
+          /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="mobile__contact">
+  <div class="mobile_bloc2">
+    <div class="content__title content__title--black">
+      <h1>Contactez-nous</h1>
+      <p>
+        Nous aimons les questions et les commentaires et
+        nous sommes toujours heureux de vous aider.
+      </p>
+    </div>
+    <div class="contact__mob">
+      <div class="contact__mob_1 justify">
+        <p class="contact__mob_1__subtitle">
+          Envoyez nous un message
+        </p>
+        <p class="contact__mob_1__desc">
+          Envoyez nous un message et nous allons repondre
+          en 24 heures
+        </p>
+
+        <form class="contact__mob_1__form">
+          <div class="contact__mob_1__form_content">
+            <input
+                type="text"
+                name="nom"
+                placeholder="Entrez votre nom complet"
+                required
+            />
+          </div>
+
+          <div class="contact__mob_1__form_content">
+            <input
+                type="email"
+                name="email"
+                placeholder="Ecrivez votre mail ici"
+                required
+            />
+          </div>
+
+          <div class="contact__mob_1__form_content">
+            <div class="contact1__content drapeau">
+              <img
+                  src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/contact/drapeau.png"
+                  alt="icône d'un drapeau"
+              />
+              <input
+                  type="tel"
+                  name="telephone"
+                  placeholder="Numero de téléphone"
+              />
+            </div>
+          </div>
+
+          <div class="contact__mob_1__form_content">
+            <input
+                type="text"
+                name="organisation"
+                placeholder="Nom de l’organisation"
+                required
+            />
+          </div>
+
+          <div
+              class="contact__mob_1__form_content message"
+          >
+                            <textarea
+                                name="message"
+                                cols="30"
+                                rows="10"
+                                placeholder="Entrez votre message ici"
+                            ></textarea>
+          </div>
+        </form>
+        <a onclick="submit()" class="btn">Envoyez</a>
+      </div>
+      <div class="contact__mob_2">
+        <p class="contact__mob_2_subtitle">
+          Detail du contact
+        </p>
+        <div class="contact__mob_2_infos">
+          <div class="contact__mob_2_infos_1">
+            <img
+                src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/contact/location.png"
+                alt="localisation"
+            />
+            <p>Kotto Rue des châteaux</p>
+          </div>
+          <div class="contact__mob_2_infos_1">
+            <img
+                src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/contact/mail.png"
+                alt="sms"
+            />
+            <p>
+              <a href="mailto:info@digital-x-sarl.com"
+              >info@digital-x-sarl.com</a
+              >
+            </p>
+          </div>
+          <div class="contact__mob_2_infos_1">
+            <img
+                src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/contact/call.png"
+                alt="call"
+            />
+            <p>680974148-676930245 (WhatsApp)</p>
+          </div>
+          <div class="contact__mob_2_infos_1">
+            <img
+                src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/contact/clock.png"
+                alt="clock"
+            />
+            <p>Du lundi au vendredi (8h - 17h)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+
+<footer class="footer">
+    <div class="footerfirstpart">
+        <div class="grid-2-colss footerfirstpart__container">
+            <div class="footerfirstpart__content nones">
+                <h2 class="footerfirstpart__title">Design Graphique</h2>
+                <ul class="footerfirstpart__list">
+                    <li>
+                        <a href="#" class="footerfirstpart__link"
+                            >UI et UX Design
+                        </a>
+                        <div class="bar"></div>
+                    </li>
+                    <li>
+                        <a href="#" class="footerfirstpart__link"
+                            >Graphic Design
+                        </a>
+                        <div class="bar"></div>
+                    </li>
+                    <li>
+                        <a href="#" class="footerfirstpart__link"
+                            >Video Production
+                        </a>
+                        <div class="bar"></div>
+                    </li>
+                    <li>
+                        <a href="#" class="footerfirstpart__link"
+                            >Web Design
+                        </a>
+                        <div class="bar"></div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footerfirstpart__content">
+                <h2 class="footerfirstpart__title">Développement</h2>
+                <ul class="footerfirstpart__list">
+                    <li>
+                        <a
+                            href="development/dev.html"
+                            class="footerfirstpart__link"
+                            >Développement web
+                        </a>
+                        <div class="bar"></div>
+                    </li>
+
+                    <li>
+                        <a
+                            href="development/dev.html"
+                            class="footerfirstpart__link"
+                            >Développement mobile
+                        </a>
+                        <div class="bar"></div>
+                    </li>
+                    <li>
+                        <a
+                            href="development/dev.html"
+                            class="footerfirstpart__link"
+                            >Ecommerce
+                        </a>
+                        <div class="bar"></div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footerfirstpart__content">
+                <h2 class="footerfirstpart__title">Marketing</h2>
+                <ul class="footerfirstpart__list">
+                    <li>
+                        <a
+                            href="marketing/marketing.html"
+                            class="footerfirstpart__link"
+                            >Marketing de contenu
+                        </a>
+                        <div class="bar"></div>
+                    </li>
+                    <li>
+                        <a
+                            href="marketing/marketing.html"
+                            class="footerfirstpart__link"
+                            >Marketing de réseaux sociaux
+                        </a>
+                        <div class="bar"></div>
+                    </li>
+                    <li>
+                        <a
+                            href="marketing/marketing.html"
+                            class="footerfirstpart__link"
+                            >Marketing d'email
+                        </a>
+                        <div class="bar"></div>
+                    </li>
+                    <li>
+                        <a
+                            href="marketing/marketing.html"
+                            class="footerfirstpart__link"
+                            >Marketing audiovisuel
+                        </a>
+                        <div class="bar"></div>
+                    </li>
+                    <li>
+                        <a
+                            href="marketing/marketing.html"
+                            class="footerfirstpart__link"
+                            >Marketing d'influence
+                        </a>
+                        <div class="bar"></div>
+                    </li>
+                    <li>
+                        <a
+                            href="marketing/marketing.html"
+                            class="footerfirstpart__link"
+                            >Marketing d'affiliation
+                        </a>
+                        <div class="bar"></div>
+                    </li>
+                    <li>
+                        <a
+                            href="marketing/marketing.html"
+                            class="footerfirstpart__link"
+                            >Référencement
+                        </a>
+                        <div class="bar"></div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footerfirstpart__content">
+                <h2 class="footerfirstpart__title">Audiovisuel</h2>
+                <ul class="footerfirstpart__list">
+                    <li>
+                        <a
+                            href="photographie.html"
+                            class="footerfirstpart__link"
+                            >Photographie
+                        </a>
+                        <div class="bar"></div>
+                    </li>
+                    <li>
+                        <a
+                            href="photographie.html"
+                            class="footerfirstpart__link"
+                            >Couverture médiatique
+                        </a>
+                        <div class="bar"></div>
+                    </li>
+                    <li>
+                        <a
+                            href="photographie.html"
+                            class="footerfirstpart__link"
+                            >Shooting
+                        </a>
+                        <div class="bar"></div>
+                    </li>
+                    <li>
+                        <a
+                            href="photographie.html"
+                            class="footerfirstpart__link"
+                            >Production audiovisuelle
+                        </a>
+                        <div class="bar"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footersecondpart">
+        <a href="https://www.facebook.com/digitalxsarl">
+            <img
+                src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/development/logofacebook.png"
+                alt=""
+            />
+        </a>
+        <a href="https://www.instagram.com/digitalxsarl/">
+            <img
+                src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/development/Instagram.png"
+                alt=""
+            />
+        </a>
+        <a href="https://www.youtube.com/channel/UCGLGjzLsbqAT2oFdEBNjyAA">
+            <img
+                src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/development/youtube.png"
+                alt=""
+            />
+        </a>
+        <a
+            href="https://twitter.com/digitalxsarl/status/1533760611959549954?s=20&t=Xphuf3jGBXBlLofQL9AtCQ"
+        >
+            <img
+                src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/development/twitter.png"
+                alt=""
+            />
+        </a>
+        <a href="https://www.linkedin.com/company/86256103/admin/">
+            <img
+                src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/development/linkedin.png"
+                alt=""
+            />
+        </a>
+    </div>
+    <div class="footercopyright">
+        <p class="footercopyright__text">Copyright : 2022 DIGITAL X SARL</p>
+    </div>
+</footer>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script defer src="./script.js"></script>
+  
+</body>
+</html>

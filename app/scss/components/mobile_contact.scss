@@ -2,7 +2,6 @@
 
 .mobile__contact{
     display: none;
-    margin-bottom: rem(14);
     @include breakpoint-down(small){
         display: block;
     }

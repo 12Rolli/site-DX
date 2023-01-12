@@ -1,0 +1,212 @@
+<!-- contact.html -->
+{% set page_title = "Contact" %} {% extends "layout.html" %}
+
+{% block content %}
+
+<main>
+    <section class="bannercontact">
+        <div class="bannercontact__container">
+            <div class="bannercontact__content">
+                <h1 class="bannercontact__title">
+                    <strong>parlez - </strong> nous de vos
+                    <strong>projets</strong>
+                </h1>
+                <p class="bannercontact__text">
+                    nous vous répondrons dans 24h
+                </p>
+                <p class="bannercontact__email">
+                    <img
+                        src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/contact/message.png"
+                        alt="icône d'une enveloppe"
+                    />
+                    <span>info@digital-x-sarl.com</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="formcontact">
+        <p class="formcontact__title">
+            Nous aimons les questions et les commentaires et nous sommes
+            toujours heureux de vous aider.
+        </p>
+        <p class="formcontact__subtitle">Envoyez nous un message</p>
+        <p class="formcontact__subsubtitle">
+            Envoyez nous un message et nous répondrons en 24 heures
+        </p>
+        <form id="contactForm" class="formcontact__form grid-2-col">
+            <div class="formcontact__content">
+                <label for="nom" class="formcontact__label remove"
+                    >Nom complet
+                    <span>*</span>
+                </label>
+                <input
+                    type="text"
+                    id="nom"
+                    name="nom"
+                    placeholder="Entrez votre nom complet"
+                    required
+                    class="formcontact__input"
+                />
+            </div>
+
+            <div class="formcontact__content">
+                <label for="email" class="formcontact__label remove"
+                    >Email
+                    <span>*</span>
+                </label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Entrez votre adresse mail"
+                    required
+                    class="formcontact__input"
+                />
+            </div>
+
+            <div class="formcontact__content">
+                <label for="telephone" class="formcontact__label remove"
+                    >Téléphone
+                    <span>*</span>
+                </label>
+                <div class="formcontact__tel">
+                    <img
+                        src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/contact/drapeau.png"
+                        alt="icône d'un drapeau"
+                    />
+                    <input
+                        type="tel"
+                        id="telephone"
+                        name="telephone"
+                        placeholder="Numéro de téléphone"
+                        class="formcontact__input"
+                    />
+                </div>
+            </div>
+
+            <div class="formcontact__content">
+                <label
+                    for="organisation"
+                    class="formcontact__label remove"
+                    >Organisation
+                    <span>*</span>
+                </label>
+                <input
+                    type="text"
+                    id="organisation"
+                    name="organisation"
+                    placeholder="Nom de l'organisation"
+                    required
+                    class="formcontact__input"
+                />
+            </div>
+
+            <div class="formcontact__content formcontact__message">
+                <label for="message" class="formcontact__label remove"
+                    >Message
+                    <span>*</span>
+                </label>
+                <textarea
+                    name="message"
+                    id="message"
+                    cols="30"
+                    rows="10"
+                    class="formcontact__input"
+                    placeholder="Entrez votre message"
+                ></textarea>
+            </div>
+
+            <div class="formcontact__content">
+                <label for="projet" class="formcontact__label"
+                    >Type de projet
+                    <span>*</span>
+                </label>
+                <select
+                    name="projet"
+                    id="projet"
+                    class="formcontact__inputselect"
+                >
+                    <option value="Web">Web</option>
+                    <option value="Developpement">Développement</option>
+                    <option value="design graphique">Design Graphique</option>
+                    <option value="shooting">Shooting</option>
+                    <option value="tous les services">Tous les services</option>
+                </select>
+            </div>
+
+            <div class="formcontact__content">
+                <label for="canal" class="formcontact__label"
+                    >Comment avez-vous entendu parler de nous?
+                </label>
+                <select
+                    name="canal"
+                    id="canal"
+                    class="formcontact__inputselect"
+                >
+                    <option value="amis/ collegue">Amis/Collègues</option>
+                    <option value="recherche sur le net">Recherche sur le net</option>
+                    <option value="reseaux sociaux">Réseaux sociaux</option>
+                    <option value="document">Document</option>
+                    <option value="autre">Autres</option>
+                </select>
+            </div>
+
+            <div
+                class="formcontact__content formcontact__policies dissapear"
+            >
+                <label for="politique" class="formcontact__label"
+                    >Politique de confidentialité
+                </label>
+                <div class="formcontact__policiescontent">
+                    <input
+                        type="checkbox"
+                        id="politique"
+                        name="politique"
+                        required
+                        class="formcontact__input"
+                    />
+                    <span>
+                        Afin de nous soumettre vos coordonnées, veuillez
+                        accepter <br />
+                        les termes de notre
+                        <span class="text--blue"
+                            >politique de confidentialité</span
+                        >
+                    </span>
+                </div>
+                <p>
+                    Celle-ci fournit toutes les informations relatives à
+                    la protection des données et à Blue Frontier, et
+                    peut être mise à jour de temps à autre. Veuillez
+                    donc la consulter régulièrement pour prendre
+                    connaissance des mises à jour.
+                </p>
+            </div>
+
+            <div class="formcontact__content dissapear">
+                <label for="captcha" class="formcontact__label"
+                    >Veuillez cocher la case
+                </label>
+                <div class="formcontact__contentcaptcha">
+                    <input
+                        type="checkbox"
+                        id="captcha"
+                        name="captcha"
+                        required
+                        class="formcontact__input"
+                    />
+                    <span>Veuillez cocher la case</span>
+                    <img
+                        src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/contact/capcha.png"
+                        alt="icône captcha"
+                    />
+                </div>
+            </div>
+
+            <a onclick="submit()" class="formcontact__inputcontact">Envoyer</a>
+        </form>
+    </section>
+</main>
+
+{% endblock %}

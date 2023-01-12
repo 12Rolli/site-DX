@@ -1,0 +1,711 @@
+<!-- layout.html -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,600&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;0,600;0,800;1,400;1,500;1,700;1,800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Kaushan+Script&display=swap" rel="stylesheet"/>
+
+  <link rel="apple-touch-icon" sizes="57x57" href="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662909412/dx/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662909412/dx/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662909412/dx/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662909412/dx/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662909412/dx/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662909412/dx/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662909412/dx/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662909412/dx/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662909412/dx/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662909412/dx/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662909412/dx/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662909412/dx/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662909412/dx/favicon/favicon-16x16.png">
+  <link rel="manifest" href="https://res.cloudinary.com/digital-x-sarl/raw/upload/v1662909411/dx/favicon/manifest.json">
+  <meta name="facebook-domain-verification" content="diywpjvvozmjhfj6di8yhclpq8fwlv" />
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662909412/dx/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '999752634013169');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"src="https://www.facebook.com/tr?id=999752634013169&ev=PageView&noscript=1"/>
+  </noscript>
+
+  <link rel="stylesheet" href="./style.css" />
+
+  <title>Contact</title>
+</head>
+<body>
+<header class="header" id="header">
+    <div class="header__container">
+        <a href="index.html" class="header__linkimg"
+            ><img
+                src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/menu/Logo.png"
+                alt="logo de DX"
+                class="header__logo"
+        /></a>
+        <nav class="header__nav">
+            <div class="menu__head">
+                <div class="header__retourarriere">
+                    <img
+                        src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/menu/back.png"
+                        alt="icone back arrow"
+                    />
+                </div>
+            </div>
+            <ul class="header__list">
+                <li class="header__item">
+                    <a href="index.html" class="header__link">
+                        <span class="header__linktitle">Home</span>
+                    </a>
+                </li>
+
+                <li class="link--service header__item header__child">
+                    <span class="header__link">
+                        <span class="header__linktitle">Nos services</span>
+                    </span>
+
+                    <div class="header__megamenu submenu">
+                        <div class="header__megamenucontainer">
+                            <div class="header__megamenucontent header__design">
+                                <!-- <div class="header__currentmenu"></div> -->
+                                <h2 class="header__megamenutitle">
+                                    Design Graphique
+                                </h2>
+                                <ul class="header__megamenulist">
+                                    <li>
+                                        <a href="#" class="header__megamenulink"
+                                            >UI et UX Design
+                                        </a>
+                                        <div class="bar"></div>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="header__megamenulink"
+                                            >Graphic Design
+                                        </a>
+                                        <div class="bar"></div>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="header__megamenulink"
+                                            >Video Production
+                                        </a>
+                                        <div class="bar"></div>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="header__megamenulink"
+                                            >Web Design
+                                        </a>
+                                        <div class="bar"></div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="header__megamenucontent">
+                                <div class="header__currentmenu"></div>
+                                <h2 class="header__megamenutitle">
+                                    Développement
+                                </h2>
+                                <ul class="header__megamenulist">
+                                    <li>
+                                        <a
+                                            href="dev.html"
+                                            class="header__megamenulink"
+                                            >Développement web
+                                        </a>
+                                        <div class="bar"></div>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="dev.html"
+                                            class="header__megamenulink"
+                                            >Développement mobile
+                                        </a>
+                                        <div class="bar"></div>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="dev.html"
+                                            class="header__megamenulink"
+                                            >Ecommerce
+                                        </a>
+                                        <div class="bar"></div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="header__megamenucontent">
+                                <h2 class="header__megamenutitle">Marketing</h2>
+                                <ul class="header__megamenulist">
+                                    <li>
+                                        <a
+                                            href="marketing.html#marketingcontenu"
+                                            class="header__megamenulink"
+                                            >Marketing de contenu
+                                        </a>
+                                        <div class="bar"></div>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="marketing.html#marketingreseau"
+                                            class="header__megamenulink"
+                                            >Marketing de réseaux sociaux
+                                        </a>
+                                        <div class="bar"></div>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="marketing.html#marketingemail"
+                                            class="header__megamenulink"
+                                            >Marketing d'email
+                                        </a>
+                                        <div class="bar"></div>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="marketing.html"
+                                            class="header__megamenulink"
+                                            >Marketing audiovisuel
+                                        </a>
+                                        <div class="bar"></div>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="marketing.html#marketinginfluence"
+                                            class="header__megamenulink"
+                                            >Marketing d'influence
+                                        </a>
+                                        <div class="bar"></div>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="marketing.html#marketingaffiliation"
+                                            class="header__megamenulink"
+                                            >Marketing d'affiliation
+                                        </a>
+                                        <div class="bar"></div>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="marketing.html#marketingsem"
+                                            class="header__megamenulink"
+                                            >Référencement
+                                        </a>
+                                        <div class="bar"></div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div
+                                class="header__megamenucontent header__audiovisuel"
+                            >
+                                <h2 class="header__megamenutitle">
+                                    Audiovisuel
+                                </h2>
+                                <ul class="header__megamenulist">
+                                    <li>
+                                        <a
+                                            href="photographie.html"
+                                            class="header__megamenulink"
+                                            >Photographie
+                                        </a>
+                                        <div class="bar"></div>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="photographie.html"
+                                            class="header__megamenulink"
+                                            >Couverture médiatique
+                                        </a>
+                                        <div class="bar"></div>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="photographie.html"
+                                            class="header__megamenulink"
+                                            >Shooting
+                                        </a>
+                                        <div class="bar"></div>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="photographie.html"
+                                            class="header__megamenulink"
+                                            >Production audiovisuelle
+                                        </a>
+                                        <div class="bar"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="header__item ">
+                    <a href="portfolio.html" class="header__link">
+                        <span class="header__linktitle">Portfolio</span>
+                    </a>
+                </>
+                <li class="header__item header__carriere">
+                    <a href="#" class="header__link">
+                        <span class="header__linktitle">Carriere</span>
+                    </a>
+                </li>
+                <li class="header__item">
+                    <a href="contact.html" class="header__link">
+                        <span class="header__linktitle">Contact</span>
+                    </a>
+                </li>
+            </ul>
+
+            <p class="header__contact">
+                WhatsApp:
+                <a
+                    class="header__contact_whatsapp"
+                    href="https://wa.me/237676930245"
+                    >+237 676 93 02 45</a
+                >
+            </p>
+
+            <div class="toggle">
+                <img
+                    src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/menu/burger.png"
+                    alt="icône burger"
+                    class="ouvrir"
+                />
+                <img
+                    src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/menu/time.png"
+                    alt="icône croix"
+                    class="fermer"
+                />
+            </div>
+        </nav>
+    </div>
+</header>
+
+
+
+<main>
+    <section class="bannercontact">
+        <div class="bannercontact__container">
+            <div class="bannercontact__content">
+                <h1 class="bannercontact__title">
+                    <strong>parlez - </strong> nous de vos
+                    <strong>projets</strong>
+                </h1>
+                <p class="bannercontact__text">
+                    nous vous répondrons dans 24h
+                </p>
+                <p class="bannercontact__email">
+                    <img
+                        src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/contact/message.png"
+                        alt="icône d'une enveloppe"
+                    />
+                    <span>info@digital-x-sarl.com</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="formcontact">
+        <p class="formcontact__title">
+            Nous aimons les questions et les commentaires et nous sommes
+            toujours heureux de vous aider.
+        </p>
+        <p class="formcontact__subtitle">Envoyez nous un message</p>
+        <p class="formcontact__subsubtitle">
+            Envoyez nous un message et nous répondrons en 24 heures
+        </p>
+        <form id="contactForm" class="formcontact__form grid-2-col">
+            <div class="formcontact__content">
+                <label for="nom" class="formcontact__label remove"
+                    >Nom complet
+                    <span>*</span>
+                </label>
+                <input
+                    type="text"
+                    id="nom"
+                    name="nom"
+                    placeholder="Entrez votre nom complet"
+                    required
+                    class="formcontact__input"
+                />
+            </div>
+
+            <div class="formcontact__content">
+                <label for="email" class="formcontact__label remove"
+                    >Email
+                    <span>*</span>
+                </label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Entrez votre adresse mail"
+                    required
+                    class="formcontact__input"
+                />
+            </div>
+
+            <div class="formcontact__content">
+                <label for="telephone" class="formcontact__label remove"
+                    >Téléphone
+                    <span>*</span>
+                </label>
+                <div class="formcontact__tel">
+                    <img
+                        src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/contact/drapeau.png"
+                        alt="icône d'un drapeau"
+                    />
+                    <input
+                        type="tel"
+                        id="telephone"
+                        name="telephone"
+                        placeholder="Numéro de téléphone"
+                        class="formcontact__input"
+                    />
+                </div>
+            </div>
+
+            <div class="formcontact__content">
+                <label
+                    for="organisation"
+                    class="formcontact__label remove"
+                    >Organisation
+                    <span>*</span>
+                </label>
+                <input
+                    type="text"
+                    id="organisation"
+                    name="organisation"
+                    placeholder="Nom de l'organisation"
+                    required
+                    class="formcontact__input"
+                />
+            </div>
+
+            <div class="formcontact__content formcontact__message">
+                <label for="message" class="formcontact__label remove"
+                    >Message
+                    <span>*</span>
+                </label>
+                <textarea
+                    name="message"
+                    id="message"
+                    cols="30"
+                    rows="10"
+                    class="formcontact__input"
+                    placeholder="Entrez votre message"
+                ></textarea>
+            </div>
+
+            <div class="formcontact__content">
+                <label for="projet" class="formcontact__label"
+                    >Type de projet
+                    <span>*</span>
+                </label>
+                <select
+                    name="projet"
+                    id="projet"
+                    class="formcontact__inputselect"
+                >
+                    <option value="Web">Web</option>
+                    <option value="Developpement">Développement</option>
+                    <option value="design graphique">Design Graphique</option>
+                    <option value="shooting">Shooting</option>
+                    <option value="tous les services">Tous les services</option>
+                </select>
+            </div>
+
+            <div class="formcontact__content">
+                <label for="canal" class="formcontact__label"
+                    >Comment avez-vous entendu parler de nous?
+                </label>
+                <select
+                    name="canal"
+                    id="canal"
+                    class="formcontact__inputselect"
+                >
+                    <option value="amis/ collegue">Amis/Collègues</option>
+                    <option value="recherche sur le net">Recherche sur le net</option>
+                    <option value="reseaux sociaux">Réseaux sociaux</option>
+                    <option value="document">Document</option>
+                    <option value="autre">Autres</option>
+                </select>
+            </div>
+
+            <div
+                class="formcontact__content formcontact__policies dissapear"
+            >
+                <label for="politique" class="formcontact__label"
+                    >Politique de confidentialité
+                </label>
+                <div class="formcontact__policiescontent">
+                    <input
+                        type="checkbox"
+                        id="politique"
+                        name="politique"
+                        required
+                        class="formcontact__input"
+                    />
+                    <span>
+                        Afin de nous soumettre vos coordonnées, veuillez
+                        accepter <br />
+                        les termes de notre
+                        <span class="text--blue"
+                            >politique de confidentialité</span
+                        >
+                    </span>
+                </div>
+                <p>
+                    Celle-ci fournit toutes les informations relatives à
+                    la protection des données et à Blue Frontier, et
+                    peut être mise à jour de temps à autre. Veuillez
+                    donc la consulter régulièrement pour prendre
+                    connaissance des mises à jour.
+                </p>
+            </div>
+
+            <div class="formcontact__content dissapear">
+                <label for="captcha" class="formcontact__label"
+                    >Veuillez cocher la case
+                </label>
+                <div class="formcontact__contentcaptcha">
+                    <input
+                        type="checkbox"
+                        id="captcha"
+                        name="captcha"
+                        required
+                        class="formcontact__input"
+                    />
+                    <span>Veuillez cocher la case</span>
+                    <img
+                        src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/contact/capcha.png"
+                        alt="icône captcha"
+                    />
+                </div>
+            </div>
+
+            <a onclick="submit()" class="formcontact__inputcontact">Envoyer</a>
+        </form>
+    </section>
+</main>
+
+
+<footer class="footer">
+    <div class="footerfirstpart">
+        <div class="grid-2-colss footerfirstpart__container">
+            <div class="footerfirstpart__content nones">
+                <h2 class="footerfirstpart__title">Design Graphique</h2>
+                <ul class="footerfirstpart__list">
+                    <li>
+                        <a href="#" class="footerfirstpart__link"
+                            >UI et UX Design
+                        </a>
+                        <div class="bar"></div>
+                    </li>
+                    <li>
+                        <a href="#" class="footerfirstpart__link"
+                            >Graphic Design
+                        </a>
+                        <div class="bar"></div>
+                    </li>
+                    <li>
+                        <a href="#" class="footerfirstpart__link"
+                            >Video Production
+                        </a>
+                        <div class="bar"></div>
+                    </li>
+                    <li>
+                        <a href="#" class="footerfirstpart__link"
+                            >Web Design
+                        </a>
+                        <div class="bar"></div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footerfirstpart__content">
+                <h2 class="footerfirstpart__title">Développement</h2>
+                <ul class="footerfirstpart__list">
+                    <li>
+                        <a
+                            href="development/dev.html"
+                            class="footerfirstpart__link"
+                            >Développement web
+                        </a>
+                        <div class="bar"></div>
+                    </li>
+
+                    <li>
+                        <a
+                            href="development/dev.html"
+                            class="footerfirstpart__link"
+                            >Développement mobile
+                        </a>
+                        <div class="bar"></div>
+                    </li>
+                    <li>
+                        <a
+                            href="development/dev.html"
+                            class="footerfirstpart__link"
+                            >Ecommerce
+                        </a>
+                        <div class="bar"></div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footerfirstpart__content">
+                <h2 class="footerfirstpart__title">Marketing</h2>
+                <ul class="footerfirstpart__list">
+                    <li>
+                        <a
+                            href="marketing/marketing.html"
+                            class="footerfirstpart__link"
+                            >Marketing de contenu
+                        </a>
+                        <div class="bar"></div>
+                    </li>
+                    <li>
+                        <a
+                            href="marketing/marketing.html"
+                            class="footerfirstpart__link"
+                            >Marketing de réseaux sociaux
+                        </a>
+                        <div class="bar"></div>
+                    </li>
+                    <li>
+                        <a
+                            href="marketing/marketing.html"
+                            class="footerfirstpart__link"
+                            >Marketing d'email
+                        </a>
+                        <div class="bar"></div>
+                    </li>
+                    <li>
+                        <a
+                            href="marketing/marketing.html"
+                            class="footerfirstpart__link"
+                            >Marketing audiovisuel
+                        </a>
+                        <div class="bar"></div>
+                    </li>
+                    <li>
+                        <a
+                            href="marketing/marketing.html"
+                            class="footerfirstpart__link"
+                            >Marketing d'influence
+                        </a>
+                        <div class="bar"></div>
+                    </li>
+                    <li>
+                        <a
+                            href="marketing/marketing.html"
+                            class="footerfirstpart__link"
+                            >Marketing d'affiliation
+                        </a>
+                        <div class="bar"></div>
+                    </li>
+                    <li>
+                        <a
+                            href="marketing/marketing.html"
+                            class="footerfirstpart__link"
+                            >Référencement
+                        </a>
+                        <div class="bar"></div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footerfirstpart__content">
+                <h2 class="footerfirstpart__title">Audiovisuel</h2>
+                <ul class="footerfirstpart__list">
+                    <li>
+                        <a
+                            href="photographie.html"
+                            class="footerfirstpart__link"
+                            >Photographie
+                        </a>
+                        <div class="bar"></div>
+                    </li>
+                    <li>
+                        <a
+                            href="photographie.html"
+                            class="footerfirstpart__link"
+                            >Couverture médiatique
+                        </a>
+                        <div class="bar"></div>
+                    </li>
+                    <li>
+                        <a
+                            href="photographie.html"
+                            class="footerfirstpart__link"
+                            >Shooting
+                        </a>
+                        <div class="bar"></div>
+                    </li>
+                    <li>
+                        <a
+                            href="photographie.html"
+                            class="footerfirstpart__link"
+                            >Production audiovisuelle
+                        </a>
+                        <div class="bar"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footersecondpart">
+        <a href="https://www.facebook.com/digitalxsarl">
+            <img
+                src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/development/logofacebook.png"
+                alt=""
+            />
+        </a>
+        <a href="https://www.instagram.com/digitalxsarl/">
+            <img
+                src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/development/Instagram.png"
+                alt=""
+            />
+        </a>
+        <a href="https://www.youtube.com/channel/UCGLGjzLsbqAT2oFdEBNjyAA">
+            <img
+                src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/development/youtube.png"
+                alt=""
+            />
+        </a>
+        <a
+            href="https://twitter.com/digitalxsarl/status/1533760611959549954?s=20&t=Xphuf3jGBXBlLofQL9AtCQ"
+        >
+            <img
+                src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/development/twitter.png"
+                alt=""
+            />
+        </a>
+        <a href="https://www.linkedin.com/company/86256103/admin/">
+            <img
+                src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/development/linkedin.png"
+                alt=""
+            />
+        </a>
+    </div>
+    <div class="footercopyright">
+        <p class="footercopyright__text">Copyright : 2022 DIGITAL X SARL</p>
+    </div>
+</footer>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script defer src="./script.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!-- layout.html -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  {% block metadata %}  {% endblock %}
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,600&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;0,600;0,800;1,400;1,500;1,700;1,800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Kaushan+Script&display=swap" rel="stylesheet"/>
+
+  <link rel="apple-touch-icon" sizes="57x57" href="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662909412/dx/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662909412/dx/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662909412/dx/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662909412/dx/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662909412/dx/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662909412/dx/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662909412/dx/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662909412/dx/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662909412/dx/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662909412/dx/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662909412/dx/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662909412/dx/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662909412/dx/favicon/favicon-16x16.png">
+  <link rel="manifest" href="https://res.cloudinary.com/digital-x-sarl/raw/upload/v1662909411/dx/favicon/manifest.json">
+  <meta name="facebook-domain-verification" content="diywpjvvozmjhfj6di8yhclpq8fwlv" />
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662909412/dx/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '999752634013169');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"src="https://www.facebook.com/tr?id=999752634013169&ev=PageView&noscript=1"/>
+  </noscript>
+
+  <link rel="stylesheet" href="./style.css" />
+
+  <title>{{ page_title }}</title>
+</head>
+<body>
+{% include "partials/header.html" %}
+{% block content %} {% endblock %}
+{% include "partials/footer.html" %}
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script defer src="./script.js"></script>
+{% block script %}  {% endblock %}
+</body>
+</html>

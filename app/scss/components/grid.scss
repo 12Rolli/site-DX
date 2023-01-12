@@ -37,7 +37,7 @@
 }
 .grid-2-colss {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 
     @include breakpoint-down(tablet) {
         grid-template-columns: repeat(2, 1fr);
@@ -63,4 +63,10 @@
     display: flex;
     align-self: flex-start;
     flex-wrap: wrap;
+}
+.gap-1 {
+    gap: 1rem;
+}
+.pb-4 {
+    padding-bottom: 4rem;
 }

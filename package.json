@@ -13,6 +13,7 @@
     "cssnano": "^5.0.6",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
+    "gulp-nunjucks-render": "^2.2.3",
     "gulp-postcss": "^9.0.0",
     "gulp-sass": "^5.0.0",
     "gulp-terser": "^2.0.1",

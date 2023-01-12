@@ -1,4 +1,4 @@
-// <<<<<<< HEADmenu
+// menu
 
 // POUR le menu
 
@@ -293,3 +293,22 @@ function showSlides(n) {
 }
 
 showSlides(slideIndex);
+
+function submit() {
+    const form = document.getElementById('contactForm');
+
+    $.ajax({
+        type: 'POST',
+        url: 'https://digital-x-sarl.com/api/contact',
+        data: $(form).serialize(),
+    }).done(function () {
+        fbq('track', 'Contact');
+        window.location = window.location;
+    });
+}
+
+/*******************************************************
+                    PHOTOGRAPHIE
+ ********************************************************/
+
+//////////slider de audiovisuel

@@ -1,0 +1,174 @@
+@use '../util' as *;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+.portfolio{
+    
+    .portfoliobarre{
+        &__elts{
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: rem(12);
+            input {
+                display: none;
+            }
+            &_container{
+                .image{
+                    display: none;
+                    img{
+                        width: 100%;    
+                        height: 100%;
+                    }
+                }
+            }
+            &_barre{
+                display: flex;
+                background-color: var(--blue);
+                justify-content: space-around;
+                @include breakpoint-down(mobile){
+                    flex-direction: column;
+                    align-items: center;
+                    line-height: 2;
+                }
+                
+                label{
+                    &:hover{
+                    border: solid rem(0) var(--white);
+                    border-radius: rem(8);
+                    background-color: var(--white);
+                    }
+                    h4{
+                        color: var(--white);
+                        margin: 0;
+                        padding: 0 rem(15);
+                        cursor: pointer;
+                        &:hover{color: var(--blue);}
+                    }
+                }
+            }
+            &_list{
+                // position: relative;
+                .bloc{height: auto;}
+                .image{
+                display: none;
+                margin-top: rem(15);
+                .img_gallery{
+                    display: grid;
+                    grid-template-areas: 'a b c d e f';
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                #fullImageViews{
+                    display: none;
+                    position: fixed;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 100%;
+                    height: 100vh;
+                    background-color: var(--darkLight);
+                    text-align: center;
+                    .fullImages{
+                        #fullImages{
+                            padding: rem(24);
+                            height: 50vh;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                        }
+                        #CloseButons{
+                            position: absolute;
+                            top: 10%;
+                            right: rem(12);
+                            font-size: 2rem;
+                            color: var(--colorBlue);
+                            cursor: pointer;
+                            @include breakpoint-down(small){
+                                top: 23%;
+                            }
+                            @include breakpoint-down(xsmall){
+                                top: 32%;
+                            }
+                            @include breakpoint-down(tablet){
+                                right: rem(30);
+                                top: 17%;
+                            }
+                        }
+                    }
+                }
+                #fullImageView{
+                    display: none;
+                    position: fixed;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 100%;
+                    height: 100vh;
+                    background-color: var(--darkLight);
+                    text-align: center;
+                    .fullImage{
+                        #fullImage{
+                            padding: rem(24);
+                            height: 50vh;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                        }
+                        #CloseButon{
+                            position: absolute;
+                            top: 10%;
+                            right: rem(12);
+                            font-size: 2rem;
+                            color: var(--colorBlue);
+                            cursor: pointer;
+                            @include breakpoint-down(small){
+                                top: 23%;
+                            }
+                            @include breakpoint-down(tablet){
+                                right: rem(30);
+                                top: 17%;
+                            }
+                        }
+                    }
+                }
+                
+                .center{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 0;
+                    margin-bottom: rem(20);
+                    gap: rem(20);
+                    @include breakpoint-down(tablet){
+                        // display: grid;
+                        display: block;
+                        text-align: center;
+                    }
+                    @include breakpoint-down(mobile){
+                        flex-direction: column;
+                        padding: 0;
+                    }
+                    }
+                }
+            }
+        }
+    }
+    #Photographie:checked ~ .portfoliobarre__elts_list .Photographie,
+    #video:checked ~ .portfoliobarre__elts_list .video,
+    #design:checked ~ .portfoliobarre__elts_list .design{display: block;}
+    #Photographie:checked ~ .portfoliobarre__elts_list .design,
+    #video:checked ~ .portfoliobarre__elts_list .design {display: none;}
+
+    #Photographie:checked ~ .portfoliobarre__elts_container .Photographie,
+    #video:checked ~ .portfoliobarre__elts_container .video,
+    #design:checked ~ .portfoliobarre__elts_container .design{display: block;}
+
+    #Photographie:checked ~ .portfoliobarre__elts_container .design,
+    #video:checked ~ .portfoliobarre__elts_container .design {display: none;}
+    
+}

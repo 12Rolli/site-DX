@@ -1,0 +1,121 @@
+<!-- portfolio.html -->
+{% set page_title = "Photographie" %} {% extends "layout.html" %} {% block
+content %}
+
+<main class="portfolio">
+    <section class="portfoliobarre">        
+        <div class="portfoliobarre__elts" >
+            <div class="contents">
+                <input type="radio" name="slider" checked id="design">
+		        <input type="radio" name="slider" id="video">
+		        <input type="radio" name="slider" id="Photographie">
+            
+                <div class="portfoliobarre__elts_container">
+                    <div class="image Photographie">
+                        <img src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1666628356/dx/images/Sites/portfolio/art_of_photography_copy.jpg" alt="">
+                    </div>
+                    <div class="image design">
+                        <img src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1663931936/dx/images/Sites/portfolio/BG.png" alt="">
+                    </div>
+                    <div class="image video">
+                        <img src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1666774021/dx/images/Sites/portfolio/videographie.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="portfoliobarre__elts_barre">
+                    <label for="design" class="design"><h4>DESIGN GRAPHIQUE</h4></label>
+                    <label for="Photographie" class="Photographie"><h4>PHOTOGRAPHIE</h4></label>
+                    <label for="video" class="video"><h4>VIDEOGRAPHY</h4></label>
+                </div>
+
+                <div class="portfoliobarre__elts_list">
+                    <div class="image Photographie">
+                        <div class="imggallery2__container bloc containers">
+                            <img src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/Sites/photo/grid21.png" class="imggallery2__img--one" alt="" onclick="FullViews(this.src)">
+                            <img src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/Sites/photo/grid22.png" class="imggallery2__img--two" alt="" onclick="FullViews(this.src)">
+                            <img src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/Sites/photo/grid23.png" class="imggallery2__img--three" alt="" onclick="FullViews(this.src)">
+                            <img src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/Sites/photo/grid24.png" class="imggallery2__img--four" alt="" onclick="FullViews(this.src)">
+                            <img src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/Sites/photo/grid25.png" class="imggallery2__img--five" alt="" onclick="FullViews(this.src)">
+                            <img src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/Sites/photo/grid26.png" class="imggallery2__img--six" alt="" onclick="FullViews(this.src)">
+                            <img src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/Sites/photo/grid27.png" class="imggallery2__img--sept" alt="" onclick="FullViews(this.src)">
+                            <img src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/Sites/photo/grid28.png" class="imggallery2__img--huit" alt="" onclick="FullViews(this.src)">
+                            <img src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/Sites/photo/grid29.png" class="imggallery2__img--neuf" alt="" onclick="FullViews(this.src)">
+                            <img src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/Sites/photo/grid2-10.png" class="imggallery2__img--dix" alt="" onclick="FullViews(this.src)">
+                            <img src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/Sites/photo/grid2-11.png" class="imggallery2__img--onze" alt="" onclick="FullViews(this.src)">
+                            <img src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1663752230/dx/images/Sites/photo/grid2-12.jpg" class="imggallery2__img--douze" alt="" onclick="FullViews(this.src)">
+                            <img src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/Sites/photo/grid2-13.jpg" class="imggallery2__img--treize" alt="" onclick="FullViews(this.src)">
+                            <img src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/Sites/photo/grid2-14.jpg" class="imggallery2__img--quatorze" alt="" onclick="FullViews(this.src)">
+                            <img src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/Sites/photo/grid2-15.jpg" class="imggallery2__img--quinze" alt="" onclick="FullViews(this.src)">
+                            <img src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/Sites/photo/grid2-16.jpg" class="imggallery2__img--seize" alt="" onclick="FullViews(this.src)">
+                            <img src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/Sites/photo/grid2-17.jpg" class="imggallery2__img--dixsept" alt="" onclick="FullViews(this.src)">
+                        </div>
+                        <div id="fullImageViews">
+                            <div class="fullImages">
+                             <img id="fullImages">
+                             <span id="CloseButons" onclick="CloseFullViews()">&times;</span>
+                            </div>
+                         </div>
+                    </div>
+                    <div class="image video">
+                        <div class="containers center">
+                            <iframe src="https://www.youtube.com/embed/PW40_tFjbUA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/9t-KRRw81k8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/0vRHiGxxv-8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="image design">
+                        <div class="img_gallery containers">
+                            <div class="img1"><img src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1663931815/dx/images/Sites/portfolio/e.png" alt="" onclick="FullView(this.src)"></div>
+                            <div class="img2"><img src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1663931815/dx/images/Sites/portfolio/l.png" alt="" onclick="FullView(this.src)"></div>
+                            <div class="img3"><img src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1663931815/dx/images/Sites/portfolio/11.png" alt="" onclick="FullView(this.src)"></div>
+                            <div class="img4"><img src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1663931815/dx/images/Sites/portfolio/3.png" alt="" onclick="FullView(this.src)"></div>
+                            <div class="img5"><img src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1663931815/dx/images/Sites/portfolio/j.png" alt="" onclick="FullView(this.src)"></div>
+                            <div class="img6"><img src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1663931815/dx/images/Sites/portfolio/f.png" alt="" onclick="FullView(this.src)"></div>
+                            <div class="img7"><img src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1663931815/dx/images/Sites/portfolio/m.png" alt="" onclick="FullView(this.src)"></div>
+                            <div class="img8"><img src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1663931815/dx/images/Sites/portfolio/5.png" alt="" onclick="FullView(this.src)"></div>
+                            <div class="img9"><img src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1663936109/dx/images/Sites/portfolio/12.png" alt="" onclick="FullView(this.src)"></div>
+                            <div class="img10"><img src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1664451651/dx/images/Sites/portfolio/red.png" alt="" onclick="FullView(this.src)"></div>
+                            <div class="img11"><img src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1662898314/dx/images/Sites/Blog/Marketing-dinfluence.png" alt="" onclick="FullView(this.src)"></div>
+                            <div class="img12"><img src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1663931816/dx/images/Sites/portfolio/o.png" alt="" onclick="FullView(this.src)"></div>
+                            <div class="img13"><img src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1663932218/dx/images/Sites/portfolio/7.png" alt="" onclick="FullView(this.src)"></div>
+                            <div class="img14"><img src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1663931817/dx/images/Sites/portfolio/u.png" alt="" onclick="FullView(this.src)"></div>
+                            <div class="img15"><img src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1663931815/dx/images/Sites/portfolio/h.png" alt="" onclick="FullView(this.src)"></div>
+                            <div class="img16"><img src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1663932218/dx/images/Sites/portfolio/8.png" alt="" onclick="FullView(this.src)"></div>
+                            <div class="img17"><img src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1663931817/dx/images/Sites/portfolio/z.png" alt="" onclick="FullView(this.src)"></div>
+                            <div class="img18"><img src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1663931816/dx/images/Sites/portfolio/l.png" alt="" onclick="FullView(this.src)"></div>
+                            <div class="img19"><img src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1663932218/dx/images/Sites/portfolio/9.png" alt="" onclick="FullView(this.src)"></div>
+                        </div>
+                        <div id="fullImageView">
+                           <div class="fullImage">
+                            <img id="fullImage">
+                            <span id="CloseButon" onclick="CloseFullView()">&times;</span>
+                           </div>
+                        </div>
+                    </div>				
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        function FullView(ImgLink){
+            document.getElementById("fullImage").src = ImgLink;
+            document.getElementById("fullImageView").style.display = "block";
+        }
+        function FullViews(ImgLink){
+            document.getElementById("fullImages").src = ImgLink;
+            document.getElementById("fullImageViews").style.display = "block";
+        }
+        function CloseFullView(){
+            document.getElementById("fullImageView").style.display = "none";
+        }
+        function CloseFullViews(){
+            document.getElementById("fullImageViews").style.display = "none";
+        }
+    </script>
+    <!-- -------------CONTACT-------------------------------- -->
+    {% include "partials/contact.html" %} {% include "partials/mob-contact.html"
+    %}
+</main>
+
+{% endblock %}

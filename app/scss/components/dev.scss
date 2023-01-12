@@ -4,7 +4,7 @@
     color: var(--white);
 
     &__backimg {
-        background-image: url(../images/development/bannerdev.png);
+        background-image: url(https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/development/bannerdev.png);
         height: rem(649);
         //height: auto;
         background-size: cover;
@@ -411,7 +411,7 @@
 
 .revolution {
     background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-        url(../images/development/developing-programmer-development-website-design-coding-technologies.png);
+        url(https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/development/developing-programmer-development-website-design-coding-technologies.png);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -654,17 +654,17 @@
         }
     }
     .card__element--first:hover {
-        background: url(../images/development/card1.png);
+        background: url(https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/development/card1.png);
         transition: all 0.3s;
     }
 
     .card__element--second:hover {
-        background: url(../images/development/card2.png);
+        background: url(https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/development/card2.png);
         transition: all 0.3s;
     }
 
     .card__element--third:hover {
-        background: url(../images/development/card3.png);
+        background: url(https://res.cloudinary.com/digital-x-sarl/image/upload/v1662892055/dx/images/development/card3.png);
         transition: all 0.3s;
     }
 }

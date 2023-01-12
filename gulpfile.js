@@ -7,35 +7,65 @@ const cssnano = require('cssnano');
 const babel = require('gulp-babel');
 const terser = require('gulp-terser');
 const browsersync = require('browser-sync').create();
-const imagemin = require('gulp-imagemin');
-const gulp = require('gulp');
+const nunjucksRender = require('gulp-nunjucks-render');
+
+// Html Task
+task(
+    'htmlTask',
+    series(
+        function () {
+            // Gets .html and .nunjucks files in pages
+            return (
+                src('app/pages/**/*.+(html|nunjucks)')
+                    // Renders template with nunjucks
+                    .pipe(
+                        nunjucksRender({
+                            path: ['app/templates/'],
+                        })
+                    )
+                    // output files in app folder
+                    .pipe(dest('dist'))
+            );
+        } /*,
+      function() {
+        return src('dist/*.+(html|nunjucks)')
+        .pipe(dest('dist'));
+      },
+      function () {
+        return del('dist/', { force:true });
+      }*/
+    )
+);
 
 // Sass Task
-function scssTask() {
+task('scssTask', function () {
     return src('app/scss/style.scss', { sourcemaps: true })
         .pipe(sass())
         .pipe(postcss([autoprefixer(), cssnano()]))
         .pipe(dest('dist', { sourcemaps: '.' }));
-}
+});
 
 // JavaScript Task
-function jsTask() {
+task('jsTask', function () {
     return src('app/js/script.js', { sourcemaps: true })
         .pipe(babel({ presets: ['@babel/preset-env'] }))
         .pipe(terser())
         .pipe(dest('dist', { sourcemaps: '.' }));
-}
+});
 
-// Image Task
-function imgTask() {
-    return src('images/**/*').pipe(imagemin()).pipe(dest('dist/images'));
-}
+// Copy other
+task(
+    'assetsTask',
+    series(function () {
+        return src(['favicon.ico']).pipe(dest('dist'));
+    })
+);
 
 // Browsersync
-function browserSyncServe(cb) {
+task('browserSyncServe', function (cb) {
     browsersync.init({
         server: {
-            baseDir: '.',
+            baseDir: 'dist/',
         },
         notify: {
             styles: {
@@ -45,35 +75,14 @@ function browserSyncServe(cb) {
         },
     });
     cb();
-}
-function browserSyncReload(cb) {
+});
+
+task('browserSyncReload', function (cb) {
     browsersync.reload();
     cb();
-}
+});
 
-task(
-    'copy-assets',
-    series(
-        function () {
-            return src(['index.html']).pipe(dest('dist'));
-        },
-        function () {
-            return src(['app/pages/**/*']).pipe(dest('dist'));
-        },
-        scssTask,
-        jsTask,
-        imgTask
-    )
-);
-
-task(
-    'dry',
-    series('copy-assets', function () {
-        return src(['dist/**/*']).pipe(
-            dest('/Users/ronald/project/digitalx/site/tmp')
-        );
-    })
-);
+task('copy-assets', series('htmlTask', 'scssTask', 'jsTask', 'assetsTask'));
 
 task(
     'deploy',
@@ -86,18 +95,22 @@ task(
 
 // Watch Task
 function watchTask() {
-    watch('*.html', browserSyncReload);
     watch(
         ['app/scss/**/*.scss', 'app/**/*.js', 'images/*'],
         series(scssTask, jsTask, imgTask, browserSyncReload)
     );
 }
+task('watchTask', function () {
+    watch(
+        ['*.html', 'app/pages/**/*.html'],
+        series('htmlTask', 'browserSyncReload')
+    );
+    watch(
+        ['app/scss/**/*.scss', 'app/js/**/*.js'],
+        series('scssTask', 'jsTask', 'browserSyncReload')
+    );
+    watch(['*.ico'], series('assetsTask', 'browserSyncReload'));
+});
 
 // Default Gulp Task
-exports.default = series(
-    scssTask,
-    jsTask,
-    imgTask,
-    browserSyncServe,
-    watchTask
-);
+exports.default = series('copy-assets', 'browserSyncServe', 'watchTask');

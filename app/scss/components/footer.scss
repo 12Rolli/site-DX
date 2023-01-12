@@ -62,30 +62,20 @@
         //     background: #cbcbcb;
         // }
 
-        .design {
-            display: none;
-        }
+        // .design {
+        //     display: none;
+        // }
     }
 
     .footersecondpart {
-        display: -webkit-flex;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 2rem;
-        justify-content: center;
-        align-items: center;
+        text-align: center;
         padding: 1rem 0;
-        @include breakpoint-down(xsmall) {
-            gap: 2rem;
-        }
-        @include breakpoint-down(xxsmall) {
-            gap: 1rem;
+        @include breakpoint-down(mobile) {
+            padding: 1rem rem(30);
         }
 
-        img {
-            @include breakpoint-down(mobile) {
-                width: 100%;
-            }
+        a {
+            padding-right: 1rem;
         }
     }
     .footercopyright {
@@ -108,4 +98,7 @@
     height: rem(1);
     background-color: #eaeaea;
     margin-top: 0.5rem;
+}
+.nones {
+    display: none;
 }
